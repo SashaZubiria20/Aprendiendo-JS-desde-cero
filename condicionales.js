@@ -1,9 +1,9 @@
 // Estructura de control de flujo:
 
 // *Condicionales:
-// - Simples
-// - Compuestos
-// - Multiples
+// - Simples - Una sola cosa a comprobar
+// - Compuestos - si se cumple esto haz esto sino, lo otro
+// - Multiples - Varias opciones
 
 // Sintaxis: dos formas, si hay una sola linea de codigo no necesito las llaves, si hay mas si
 
@@ -130,4 +130,36 @@ if(word.length>4){
 let respuesta2 = false;
 
 if(respuesta2==true) console.log("respuesta tiene el valor true");
-if(!respuesta2) console.log("respuesta tiene el valor false");
+if(respuesta2!=true) console.log("respuesta tiene el valor false");
+
+
+//Ejercicio: Ordenar 3 numeros de menor a mayor
+
+const numbers = document.getElementById(`numbers`);
+const result = document.getElementById(`result`);
+
+let n1=prompt(`Introduzca el primer número`);
+let n2=prompt(`Introduzca el segundo número`);
+let n3=prompt(`Introduzca el tercer número`);
+
+numbers.textContent = `Los numeros introducidos son ${n1} ${n2} ${n3}`
+
+if(n1>=n2 && n1>=n3){
+    if(n2>n3){
+        result.textContent = `El orden es: ${n1}, ${n2}, ${n3}`
+    }else{
+        result.textContent = `El orden es: ${n1}, ${n3}, ${n2}`
+    }
+}else if (n2>=n1 && n2>=n3){
+    if(n1>n3){
+        result.textContent = `El orden es: ${n2}, ${n1}, ${n3}`
+    }else{
+        result.textContent = `El orden es: ${n2}, ${n3}, ${n1}`
+    }
+}else if(n3>=n1 && n3>=n2){
+    if(n1>n2){
+        result.textContent = `El orden es: ${n3}, ${n1}, ${n2}`
+    }else{
+        result.textContent = `El orden es: ${n3}, ${n2}, ${n1}`
+    }
+}
