@@ -7,8 +7,8 @@ Pueden añadirse o eliminarse elementos en cualquier momento.
 sintaxis:
 
 let array = []
-let array = [1,2,3,4,
-Casa uno de los elementos puede ser identificado por su indice, es decir su posicion.
+let array = [1,2,3,4,]
+Cada uno de los elementos puede ser identificado por su indice, es decir su posicion.
 Los indices empiezan a contar desde 0
 */
 
@@ -105,7 +105,7 @@ numeros.splice(2,2);  // elimina desde la posicion que le indiquemos, la cantida
 console.log(numeros);
 
 console.log(numeros);
-numeros.splice(2,2,10,23,54); // Si b es un valor distinto de 0 elimina el numero de valores que indiquemos en b y añade los valores de items a partir de la posicion a
+numeros.splice(2,2,10,23,54); // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos y el tercer parametro lo agrega (pueden ser los que queramos) // si b vale 0 solo añade alementos
 console.log(numeros);
 
 /*
