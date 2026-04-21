@@ -1,0 +1,162 @@
+// ************************OBJETOS**************************:
+
+/* Conceptos fundamentales:
+- Clases: Plantilla que sirve como molde para crear objetos.
+- Herencia: 
+- Objeto: 
+- Metodo: 
+- Evento: 
+*/
+
+/*
+* Clases: Plantilla que sirve como molde para crear objetos.
+- Necesitamos una funcion constructora. Se tiene que llamar constructor y se ejecuta cada vez que creemos un objeto.
+- Las clases se nombran con mayuscula por convenciones (se recomienda)
+- Despues creamos la funcion constructora (constructor) y entre parentesis pasamos los parametros que son las propiedades que va a tener el objeto (despues se pueden agregar mas).
+- Para asignar esos valores al objeto se usa la palabra reservada THIS. Con this estamos haciendo referencia al objeto que creamos.
+
+This se podria traducir como:
+- nombre del objeto = nombre del parametro
+- apellido del objeto = apellido del parametro
+- edad del objeto = edad del parametro
+
+class Persona{
+    Constructor(nombre, apellido, edad){
+    
+    this.nombre = nombre
+    this.apellido = apellido
+    this.edad = edad
+    }
+}
+
+Se le pueden asignar propiedades que no haya en los parametros, pero siempre utilizando this para referenciar al objeto:
+this.datos = `${nombre} ${apellido} ${edad}`
+*/
+
+
+// ************************METODOS**************************:
+
+/*
+- Los metodos son las funciones de los objetos. Es decir que son funciones pero que pertenecen al objeto.
+- Dentro de la clase pero fuera del constructor, podemos crear un metodo asociado al objeto.
+
+saludar() {
+    return `Hola, me llamo ${this.nombre} y tengo ${this.edad} años`;
+}
+*/
+
+// ************************CREACION DE OBJETOS**************************:
+/*
+- Para crear un objeto utilizando la clase (plantilla) se hace con la palabra reservada new y el nombre de la clase que queremos utilizar.
+
+const juan = new Persona('Juan', 'Garcia', 23)
+
+- Una vez INSTANCIADO (creado) el objeto podemos acceder a sus propiedades y metodos utilizando la nomenclatura del punto o buscando su propiedad en el objeto.
+
+jua.nombre                          juan['nombre']
+jua.apellido                        juan['apellido']
+jua.edad                            juan['edad']
+jua.datos                           juan['datos']
+jua.saludar()                       juan['saludar']()
+*/
+
+/*
+class Persona{
+    constructor(nombre, apellido, edad){
+        this.nombre = nombre
+        this.apellido = apellido
+        this.edad = edad
+
+        this.datos = `Me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años`
+    }
+
+    saludar(){
+        return `Hola, me llamo ${this.nombre} y tengo ${this.edad} años`
+    }
+}
+
+const juan = new Persona ('Juan', 'Garcia', 25)
+const maria = new Persona ('Maria', 'Garcia', 35)
+
+console.log(juan);
+console.log(juan.saludar());
+console.log(maria.saludar());
+*/
+
+// ************************EJERCICIOS**************************
+
+/*
+Crea una clase Libro.
+La clase libro tendra titulo, autor, año y genero.
+Crea un metodo que devuelva toda la informacion del libro.
+Pide 3 libros y guardalos en un array.
+Los libros se introduciran al arrancar el programa pidiendo los datos con prompt.
+Validar que los campos no se introduzcan vacios.
+Validar que el año sea un numero y que tenga 4 digitos.
+Validar que el genero sea: aventuras, terror o fantasia.
+Crea una funcion que muestre todos los libros.
+Crea una funcion que muestre los autores ordenados alfabeticamente.
+Crea una funcion que pida un genero y muestre la informacion de los libros que pertenezcan a ese genero usando el metodo que devuelve la informacion
+*/
+
+class Libro{
+    constructor(titulo, autor, año, genero){
+        this.titulo = titulo
+        this.autor = autor
+        this.año = año
+        this.genero = genero
+    }
+
+    infoLibro(){
+        return `${this.titulo}, es un libro de ${this.genero} escrito por ${this.autor} en el año ${this.año}`
+    }
+
+    autores(){
+        return this.autor
+    }
+
+    infogenero(){
+        return this.genero
+    }
+}
+
+let books = []
+
+while (books.length<3) {
+    let titulo = prompt('introduce el titulo del libro')
+    let autor = prompt('introduce el autor del libro')
+    let año = prompt('introduce el año del libro')
+    let genero = prompt('introduce el genero del libro').toLowerCase()
+
+    if(titulo != '' && autor != '' && !isNaN(año) && año.length == 4 && (genero == 'aventura' || genero == 'terror' || genero == 'fantasia')){
+
+        books.push(new Libro(titulo, autor, año, genero))
+    }
+}
+
+const verLibros = () => console.log(books);
+
+const autoresLibros = () => {
+    let autores = []
+
+    for(const libro of books){
+        autores.push(libro.autores());
+    }
+    console.log(autores.sort());
+}
+
+
+const infoXGenero = () => {
+    const gender = prompt('Introduce el genero a buscar')
+
+    for (const libro of books){
+        if (libro.infogenero() == gender){
+            console.log(libro.infoLibro())
+        }
+    }
+}
+
+
+verLibros()
+autoresLibros()
+infoXGenero()

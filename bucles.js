@@ -103,7 +103,7 @@ for(i=0;i<numbers2.length;i++){
 
 */
 
-let names = ['Paco','Jose','Paula','Maria'];
+// let names = ['Paco','Jose','Paula','Maria'];
 
 // for(let name of names){
 //     console.log(name);
