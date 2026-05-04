@@ -99,64 +99,65 @@ Crea una funcion que muestre los autores ordenados alfabeticamente.
 Crea una funcion que pida un genero y muestre la informacion de los libros que pertenezcan a ese genero usando el metodo que devuelve la informacion
 */
 
-class Libro{
-    constructor(titulo, autor, año, genero){
-        this.titulo = titulo
-        this.autor = autor
-        this.año = año
-        this.genero = genero
+class Book{
+    constructor(title, author, year, gender){
+        this.title = title
+        this.author = author
+        this.year = year
+        this.gender = gender
     }
 
-    infoLibro(){
-        return `${this.titulo}, es un libro de ${this.genero} escrito por ${this.autor} en el año ${this.año}`
+    bookInfo(){
+        return `${this.title}, es un libro de ${this.gender} escrito por ${this.author} en el año ${this.year}`
     }
 
-    autores(){
-        return this.autor
+    getAuthor(){
+        return this.author
     }
 
-    infogenero(){
-        return this.genero
+    getGender(){
+        return this.gender
     }
 }
 
 let books = []
 
-while (books.length<3) {
-    let titulo = prompt('introduce el titulo del libro')
-    let autor = prompt('introduce el autor del libro')
-    let año = prompt('introduce el año del libro')
-    let genero = prompt('introduce el genero del libro').toLowerCase()
+while(books.length<3){
+    let title = prompt(`Introduce el titulo del libro`)
+    let author = prompt(`Introduce el autor del libro`)
+    let year = prompt(`Introduce el año del libro`)
+    let gender = prompt(`Introduce el genero del libro`).toLowerCase()
 
-    if(titulo != '' && autor != '' && !isNaN(año) && año.length == 4 && (genero == 'aventura' || genero == 'terror' || genero == 'fantasia')){
+    if(title != '' && author != '' && !isNaN(year) && year.length == 4 && (gender=='aventura' || gender=='terror' || gender=='fantasía')){
+    
+    books.push(new Book(title, author, year, gender))
 
-        books.push(new Libro(titulo, autor, año, genero))
     }
 }
 
-const verLibros = () => console.log(books);
-
-const autoresLibros = () => {
-    let autores = []
-
-    for(const libro of books){
-        autores.push(libro.autores());
-    }
-    console.log(autores.sort());
+const showAllBooks = () => {
+    console.log(books);
 }
 
+const showAuthors = () => {
+    let authors = []
 
-const infoXGenero = () => {
-    const gender = prompt('Introduce el genero a buscar')
+    for(const book of books){
+        authors.push(book.getAuthor());
+    }
+    console.log(authors.sort());
+}
 
-    for (const libro of books){
-        if (libro.infogenero() == gender){
-            console.log(libro.infoLibro())
+const showGender = () => {
+    const gender = prompt(`Introduce el genero a buscar`)
+
+    for(const book of books){
+        if (book.getGender() == gender){
+            console.log(book.bookInfo())
         }
     }
 }
 
-
-verLibros()
-autoresLibros()
-infoXGenero()
+showAllBooks()
+showAuthors()
+showGender()
