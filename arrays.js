@@ -29,7 +29,7 @@ Los indices empiezan a contar desde 0
 
 //console.log(numeros.length);
 
-// Metodos:
+// ****************************************************** Metodos:
 
 /*
 Array.isArray(variable a evaluar) - Devuelve true si la variable es un array.
@@ -90,7 +90,7 @@ Eliminar un elemento:
 //console.log(numeros.join('-'));
 
 /*
-.splice(a,b,items) - Cambia el contenido de un array eliminando elementos existentes y7o agregando nuevos elementos.
+.splice(a,b,items) - Cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
     a - Indice de inicio
     b - Número de elementos (opcional)
     items - Elementos a añadir en el caso de que se añadan. (opcional)
@@ -127,3 +127,135 @@ Eliminar un elemento:
 
 // ************************* MAS METODOS *************************
 
+/* 
+
+CONCEPTOS:
+- Iterable: Un elemento iterable es todo aquel que se puede recorrer, por ejemplo un string, otro array.
+- Callback: Es simplemente una funcion. Si una funcion ejecuta una funcion se llama callbakc.
+- Valor Unicode: Es el numero que tienen asignadas las letras. Segun el valor unicode cada caracter tiene asignado un numero.
+
+*/
+
+
+
+/* .from(iterable) - Convierte en array el elemento iterable */
+
+//  let word = 'Hola mundo'
+//  console.log(Array.from(word));
+
+
+
+
+
+/* .sort([callback]) - Ordena los elementos de un array alfabeticamente (valor Unicode), si le pasamos un callback los ordena en funcion del algoritmo que le pasemos. */
+
+// const letters = ['b', 'c', 'z', 'a']
+// const numbers = [1,8,100,300,3]
+
+// console.log(letters);
+// console.log(letters.sort());
+
+// console.log(numbers.sort());
+// console.log(numbers.sort((a,b)=>a-b));
+
+
+
+
+
+/* .forEach(callback(currentValue, [index])) - Ejecuta la funcion indicada una vez por cada elemento del array. */
+
+// const numbers = [12, 25, 47, 84, 98]
+
+// numbers.forEach((number)=>console.log(number));
+// numbers.forEach((number, index) => console.log(`${number} esta en la posicion ${index}`));
+
+
+
+
+
+/* .some(callback) - Compueba si al menos un elemento del array cumple la condicion. */
+
+// const word = ['HTML', 'CSS', 'JavaScript', 'PHP']
+
+// console.log(word.some(word => word.length>2));
+// console.log(word.some(word => word.length>5));
+// console.log(word.some(word => word.length>10));
+
+
+
+
+
+/* .every(callback) - Comprueba si todos los elementos del array cumplen la condicion. */
+
+// const word = ['HTML', 'CSS', 'JavaScript', 'PHP']
+
+// console.log(word.every(word => word.length>3));
+// console.log(word.every(word => word.length>10));
+// console.log(word.every(word => word.length>2));
+
+
+
+
+/* .map(callback) - Transforma todos los elementos del array y devuelve un nuevo array. */
+
+// const numbers = [12, 25, 47, 84, 98]
+// console.log(numbers);
+
+// numbers.map(number =>console.log(number*2));
+
+
+// const numbers2 = numbers.map(number => number*2);
+// console.log(numbers2);
+
+
+
+
+/* .filter(callback) - Filtra todos los elementos del array que cumplan la condicion y devuelve un nuevo array. */
+
+// const numbers = [12, 25, 47, 84, 98]
+
+// const numbers2 = numbers.filter(number=>number>40)
+
+// console.log(numbers2);
+
+
+/* .reduce(callback) - Reduce todos los elementos del arra a un unico valor. */
+
+// const numbers = [1, 2, 3, 4, 5]
+
+// console.log(numbers.reduce((a,b)=>a+b));
+// console.log(numbers.reduce((a,b)=>a*b));
+
+const users = [
+    {
+        name: 'user 1',
+        online: true
+    },
+    {
+        name: 'user 2',
+        online: true
+    },
+    {
+        name: 'user 3',
+        online: false
+    },
+    {
+        name: 'user 4',
+        online: true
+    },
+    {
+        name: 'user 5',
+        online: false
+    },
+    {
+        name: 'user 6',
+        online: true
+    }
+]
+
+const usersOnline = users.reduce((cont, user) => {
+    if(user.online) cont++
+    return cont
+},0)
+
+console.log(`Hay ${usersOnline} usuarios conectados`);
