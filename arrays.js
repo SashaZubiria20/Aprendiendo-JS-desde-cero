@@ -142,7 +142,7 @@ CONCEPTOS:
 
 //  let word = 'Hola mundo'
 //  console.log(Array.from(word));
-
+//  console.log(WebTransportDatagramDuplexStream.split(''));
 
 
 
@@ -158,6 +158,8 @@ CONCEPTOS:
 // console.log(numbers.sort());
 // console.log(numbers.sort((a,b)=>a-b));
 
+/* Recorre el array a travez de pares a-b / b-a, va comparando para saber cual es menor/mayor
+
 
 
 
@@ -167,8 +169,10 @@ CONCEPTOS:
 // const numbers = [12, 25, 47, 84, 98]
 
 // numbers.forEach((number)=>console.log(number));
-// numbers.forEach((number, index) => console.log(`${number} esta en la posicion ${index}`));
+/* number, se suele llamar element, imprime cada elemento del array*/
 
+// numbers.forEach((number, index) => console.log(`${number} esta en la posicion ${index}`));
+/* index, tambien se puede llamar como quiera pero imprime la poscixion del elemento en el array*/
 
 
 
@@ -226,6 +230,8 @@ CONCEPTOS:
 // console.log(numbers.reduce((a,b)=>a+b));
 // console.log(numbers.reduce((a,b)=>a*b));
 
+
+/*
 const users = [
     {
         name: 'user 1',
@@ -259,3 +265,5 @@ const usersOnline = users.reduce((cont, user) => {
 },0)
 
 console.log(`Hay ${usersOnline} usuarios conectados`);
+
+*/
