@@ -1,6 +1,7 @@
 // ********** Strings
 // Propiedades:
 
+/*
 // length: devuelve la longitud de la cadena
 
 let cadena = "Hola Mundo";
@@ -23,6 +24,7 @@ console.log(cadena.toLowerCase());
 console.log(cadena.indexOf("a"));
 // podemos buscar una letra o la palabra entera, el indice arranca en la posicion 0 por ende de la palabra Hola la "a" se encuentra en la posicion 3
 
+
 // replace: replace(valor a buscar, valor nuevo) remplaza el fragmento de la cadena que le digamos y pone el nuevo valor
 // recibe dos parametros separados por ,
 
@@ -34,7 +36,7 @@ console.log(cadena.replace("Mundo", "Pepe"));
 console.log(cadena.substring(3,8));
 console.log(cadena.substring(7));
 
-// slice(inicio [,fin]): igual que substring pero admite calores negativos, si ponemos valores negativos empezara desde atras. Muestra de atras hacia adelante
+// slice(inicio [,fin]): igual que substring pero admite valores negativos, si ponemos valores negativos empezara desde atras. Muestra de atras hacia adelante
 
 console.log(cadena.slice(-4));
 console.log(cadena.slice(1, -2));
@@ -51,7 +53,7 @@ console.log(cadena.startsWith("H"));
 console.log(cadena.startsWith("h"));
 console.log(cadena.startsWith("M", 5));
 
-// endsWith(calor [,longitud]): sirve para saber si la cadena termina con ese valor. Devuelve true o false.
+// endsWith(valor [,longitud]): sirve para saber si la cadena termina con ese valor. Devuelve true o false.
 
 console.log(cadena.endsWith("o"));
 console.log(cadena.endsWith("a", 4));
@@ -85,3 +87,63 @@ let edad2 = 20;
 console.log("Hola " + nombre2 + " " + apellido2 + ". Tienes " + edad2 + " años.");
 // asi seria con template string
 console.log(`Hola ${nombre2} ${apellido2}. Tienes ${edad2} años.`);
+
+*/
+
+/******************************************EJERCICIOS**********************************************/
+
+/*
+Nivel 1: (El validador de correos)
+Crea una variable email con un correo que tenga espacios accidentales al inicio y al final (ej: " estudiante@js.com ").
+Limpia esos espacios usando el método adecuado.
+Muestra en consola cuántos caracteres tiene el email ya limpio.
+Usa un método para verificar si el email contiene el símbolo @ y muestra el resultado (true o false) en la consola.
+*/
+
+let email = '   juanperez@gmail.com'   ;
+let emailOk = email.trim();
+console.log(emailOk.length);
+console.log(emailOk.includes('@'));
+
+/*
+Nivel 2: (Formateador de IDs de productos)
+Declara una variable codigoBruto con el valor: " prod-123-celular ".
+Primero, quita los espacios.
+Luego, transforma todo el texto a MAYÚSCULAS.
+Ahora, extrae solamente la palabra "CELULAR" (o la parte que corresponda a tu ejemplo) usando slice o substring.
+Usa un Template String para mostrar este mensaje: "El producto de categoría [categoría extraída] tiene el código: [código limpio y en mayúsculas]".
+*/
+
+let codigoBruto = " prod-123-celular ";
+let codigoBrutoOk = codigoBruto.trim();
+console.log(codigoBrutoOk);
+let codigoMayus = codigoBrutoOk.toUpperCase();
+console.log(codigoMayus);
+let producto = codigoMayus.slice(9);
+console.log(producto);
+let codigo = codigoMayus.slice(0,8);
+console.log(codigo);
+
+console.log(`El producto de categoría ${producto} tiene el código: ${codigo}`);
+
+
+/*
+Nivel 3: (El generador de facturas inteligente)
+Declara una constante articulo con el valor "teclado mecanico".
+Crea una variable precioUnitario con un número y otra cantidad con otro número.
+Calcula el total (precio * cantidad).
+Transformación: Crea una variable nombreFactura que sea el nombre del artículo pero con la primera letra en mayúscula (Pista: tendrás que combinar at(0).toUpperCase() o substring con el resto de la cadena).
+Crea un mensaje final usando Template String que diga:
+"FACTURA: [nombreFactura] | CANTIDAD: [cantidad] | TOTAL A PAGAR: $[total]"
+Finalmente, verifica si ese mensaje final termina con el valor del total y muéstralo por consola (true/false).
+*/
+
+const articulo = 'teclado mecanico';
+
+let precioUnitario = 10;
+let cantidad = 5;
+let total = precioUnitario*cantidad;
+let nombreFactura = articulo[0].toUpperCase(0) + articulo.slice(1);
+let mensaje = `FACTURA ${nombreFactura} | CANTIDAD ${cantidad} | TOTAL A PAGAR ${total}`;
+console.log(mensaje.endsWith(total));
+console.log(mensaje);
