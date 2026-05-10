@@ -24,6 +24,7 @@
 
 //*********************
 
+/*
 let num5 = 5;
 if (num5>0) console.log(`${num5} es mayor que 0`);
 
@@ -162,4 +163,73 @@ if(n1>=n2 && n1>=n3){
     }else{
         result.textContent = `El orden es: ${n3}, ${n2}, ${n1}`
     }
+}
+
+*/
+
+/******************************************EJERCICIOS**********************************************/
+
+/*
+Nivel 1: (El guardián de la discoteca)
+Declara una variable edad con un número.
+Usando una estructura if-else, verifica si la edad es mayor o igual a 18.
+Si se cumple, muestra en consola: "¡Bienvenido! Puedes pasar.".
+Si no se cumple, muestra: "Lo siento, eres menor de edad.".
+*/
+
+let edad = 18;
+
+if (edad>=18){
+    console.log(`Bienvenido! Puedes pasar.`);
+}else{
+    console.log(`Lo siento, eres menor de edad.`);
+}
+
+/*
+Nivel 2: (El sorteo de la suerte)
+Genera un número aleatorio entre 1 y 10 usando Math (asegúrate de que sea un entero).
+Declara una variable miNumero y asígnale un valor manual entre 1 y 10.
+Usando if-else, compara si miNumero es igual al número aleatorio generado.
+Si aciertas: Muestra un mensaje usando Template Strings que diga: "¡Ganaste! El número era [numeroAleatorio]".
+Si fallas: Muestra: "Mala suerte, el número era [numeroAleatorio]. Sigue intentando.".
+*/
+
+let numAleatorio = Math.round(Math.random() * (10-5)+5);
+console.log(numAleatorio);
+
+let miNumero = 5;
+
+if (miNumero == numAleatorio){
+    console.log(`Ganaste! El número era ${numAleatorio}`);
+}else{
+    console.log(`Mala suerte, el número era ${numAleatorio}. Sigue intentando.`);
+}
+
+/*
+Nivel 3: (Validador de Cupones "Sasha-Shop")
+Vamos a simular un carrito de compras avanzado:
+Declara una variable montoCompra con un valor numérico (ej: 150).
+Declara una variable cupon con un texto (ej: " OFERTA20 ").
+Limpieza: Crea una variable cuponLimpio que quite los espacios del cupón y lo pase todo a minúsculas.
+Decisión:
+IF el cupón limpio es exactamente igual a "oferta20", calcula un 20% de descuento sobre el monto y muestra el total final.
+ELSE, muestra un mensaje que diga: "Cupón inválido. El total sigue siendo $[montoCompra]".
+Reto Extra: Dentro del primer if, usa otro if (if anidado) para verificar si el monto final después del descuento es mayor a 100. Si es así, muestra un mensaje extra: "¡Además tienes envío gratis!".
+*/
+
+let montoCompra = 1000;
+let cupon = ' OFERTA20 ';
+let cuponLimpio = cupon.trim().toLowerCase();
+
+
+if (cuponLimpio == 'oferta20'){
+    let descuento = (montoCompra*20)/100;
+    let totalFinal = montoCompra-descuento;
+    console.log(`El total a pagar es ${totalFinal}`);
+    if(totalFinal>100){
+        console.log(`Además tienes envio gratis!`);
+
+    }
+}else{
+    console.log(`Cupón inválido. El total sigue siendo $${montoCompra}`);
 }

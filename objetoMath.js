@@ -33,10 +33,11 @@ console.log(Math.pow(3, 3));
 console.log(Math.pow(2,2));
 console.log(Math.pow(2,3));
 
-console.log(Math.random());
-console.log(Math.random()*100);
-console.log(Math.round(Math.random()*100));
-console.log(Math.round(Math.random() * (10-5)+5));
+console.log(Math.random());                            // Numero aleatorio entre 0-1
+console.log(Math.random()*100);                        // Numero aleatorio entre 0-100
+console.log(Math.round(Math.random()*100));            // Numero aleatorio entre 0-100 sin decimales
+console.log(Math.round(Math.random() * (10-5)+5));     // Numero aleatorio entre un  minimo y un maximo
+// formula = console.log(Mat.round(Math.random() * (max-min)+min));
 
 let num3 = 5.2
 console.log(Math.round(num3));
