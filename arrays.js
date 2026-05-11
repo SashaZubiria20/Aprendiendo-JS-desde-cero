@@ -29,13 +29,16 @@ Los indices empiezan a contar desde 0
 
 //console.log(numeros.length);
 
-// ****************************************************** Metodos:
+// ****************************************************** Metodos: ***************************************
 
 /*
 Array.isArray(variable a evaluar) - Devuelve true si la variable es un array.
 */
 
 //console.log(Array.isArray(numeros));
+
+
+
 
 /*
 Eliminar un elemento:
@@ -49,6 +52,9 @@ Eliminar un elemento:
 //numeros.pop();
 //console.log(numeros);
 
+
+
+
 /* Añadir elementos:
 .push(elemento1, elemento2, .....) - Añade uno o mas elementos al final del array y devuelve la nueva longitud.
 .unshift(elemento1, elemento2, .....) - Añade uno o mas elementos al comienzo del array y devuelve la nueva logitud.
@@ -60,12 +66,19 @@ Eliminar un elemento:
 //numeros.unshift(9,5);
 //console.log(numeros);
 
+
+
+
 /*
 .indexof() - Devuelve el primer indice del elemento que coincida con el valor especificado, o -1 si ninguno es encontrado
 */
 
-//console.log(numeros);
-//console.log(numeros.indexOf(5));
+// console.log(numeros);
+// console.log(numeros.indexOf(5));
+
+
+
+
 
 /*
 .lastIndexof() - Devuelve el ultimo indice del elemento que coincida con el valor especificado, o -1 si ninguno es encontrado
@@ -73,12 +86,18 @@ Eliminar un elemento:
 
 //console.log(numeros.lastIndexOf(3));
 
-/*.reverse() - Devuelve el orden de los elementos del array.
+
+
+
+/*.reverse() - Devuelve el orden al reves de los elementos del array.
 */
 
 //console.log(numeros);
 //numeros.reverse();
 //console.log(numeros);
+
+
+
 
 /*
 .join(separador) - Devuelve un string con el separador que indiquemos, por defecto son comas ,
@@ -88,6 +107,10 @@ Eliminar un elemento:
 //console.log(numeros.join());
 //console.log(numeros);
 //console.log(numeros.join('-'));
+
+
+
+
 
 /*
 .splice(a,b,items) - Cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
@@ -108,6 +131,10 @@ Eliminar un elemento:
 //numeros.splice(2,2,10,23,54); // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos y el tercer parametro lo agrega (pueden ser los que queramos) // si b vale 0 solo añade alementos
 //console.log(numeros);
 
+
+
+
+
 /*
 .slice(a,b) - Extrae elementos de un array desde el indice a hasta el indice b. Si no existe b lo hace hasta el final, si no existe ni a ni b hace una copia del original.
 */
@@ -123,6 +150,92 @@ Eliminar un elemento:
 // let newNumeros = numeros.slice(2,3);
 // console.log(numeros);
 // console.log(newNumeros);
+
+
+
+/******************************************EJERCICIOS**********************************************/
+
+/*
+Nivel 1: (La lista del súper)
+Crea un array vacío llamado carrito.
+Añade tres productos de forma individual al final del array usando un método.
+Añade un producto importante al principio del array usando otro método.
+Muestra en consola el primer y el último elemento del array usando sus índices.
+Muestra cuántos elementos totales hay en el carrito usando la propiedad correspondiente.
+*/
+
+let carrito = [];
+
+carrito.push('fideos');
+carrito.push('arroz');
+carrito.push('sal');
+carrito.unshift('carne');
+
+console.log(carrito[0]);
+console.log(carrito[3]);
+console.log(carrito.length);
+
+/*
+Nivel 2: (El buscador de amigos)
+Crea un array llamado amigos con al menos 5 nombres (asegúrate de que algunos nombres tengan espacios o mayúsculas desordenadas.
+Elige el nombre que está en la posición 2 y límpialo (quita espacios y pon la primera letra en Mayúscula y el resto en minúscula).
+Usa un método para verificar si en tu array existe el nombre "Juan". Muestra un mensaje en consola diciendo: "¿Juan está en la lista?: [true/false]".
+Invierte el orden de todo el array.
+Une todos los nombres en un solo String separado por un guion (-) y muéstralo.
+*/
+
+let amigos = ['Juan', '   peDro ', 'pAblo', 'anA', 'SUSAna'];
+
+let amigo2 = amigos[1].trim()
+let amigo2Limpio = amigo2[0].toUpperCase() + amigo2.slice(1).toLowerCase();
+console.log(amigo2Limpio);
+
+
+let estaJuan = amigos.includes('Juan');
+console.log(`¿Juan está en la lista?: ${estaJuan}`);
+
+let amigosAlReves = amigos.reverse();
+console.log(amigosAlReves);
+
+console.log(`Mis amigos son ${amigos.join(' - ')}`);
+
+
+/*
+Nivel 3: (El sistema de gestión de equipo - "Sasha-Team")
+Simularemos la entrada y salida de jugadores en un equipo:
+Declara un array equipo con: "Portero", "Defensa", "Medio", "Delantero".
+Entrada aleatoria: Genera un número aleatorio entre 0 y 1. Si el número es mayor a 0.5, añade un "Suplente" al final del equipo. Si no, añade un "Entrenador" al principio. (Usa el Operador Ternario para decidir esto).
+Lesión en el campo: Usa el método splice para eliminar al "Defensa" y en su lugar añadir a dos jugadores: "Defensa-1" y "Defensa-2".
+Copia de seguridad: Crea una copia de los primeros tres jugadores del equipo usando slice y guárdala en un nuevo array llamado titulares.
+Verificación final: Usa un if-else para comprobar si el tamaño del array equipo es mayor a 5.
+Si es mayor: Muestra "Equipo completo: " seguido del array unido por comas.
+Si no: Muestra "Faltan jugadores. Actualmente hay: [cantidad]".
+*/
+
+let equipo = ['Portero', 'Defensa', 'Medio', 'Delantero'];
+console.log(equipo);
+
+
+let numero = Math.random();
+console.log(numero);
+
+(numero>0.5) ? equipo.push('Suplente') : equipo.unshift('Entrenador');
+console.log(equipo);
+
+let defensa = equipo.indexOf('Defensa');
+if (defensa !== -1){
+    equipo.splice(defensa,1,'Defensa1', 'Defensa2');
+    console.log(equipo);
+}
+
+let titulares = equipo.slice(0,3);
+console.log(titulares);
+
+if(equipo.length>5){
+    console.log(`Equipo completo: ${equipo.join(', ')}`);
+}else{
+    console.log(`Faltan jugadores. Actualmente hay: ${equipo.length} jugadores`);
+}
 
 
 // ************************* MAS METODOS *************************

@@ -53,6 +53,123 @@ do{
 }while(pass != 'hola')
 */
 
+/******************************************EJERCICIOS**********************************************/
+
+/*
+Nivel 1: (La cuenta regresiva)
+Declara una variable contador que empiece en 10.
+Usando un bucle while, muestra en consola los números del 10 al 1.
+Dentro del bucle, resta 1 al contador en cada vuelta.
+Al salir del bucle, muestra el mensaje: "¡DESPEGUE! 🚀".
+*/
+
+/*
+let contador = 10;
+
+while (contador>0){
+    console.log(contador);
+    contador --
+};
+console.log('DESPEGUE! 🚀');
+*/
+
+/*
+Nivel 2: (El cajero persistente)
+Declara una variable pinCorrecto con un número de 4 dígitos (como String, ej: "1234").
+Declara una variable pinIngresado vacía.
+Usando un bucle while, pide al usuario mediante un prompt que ingrese su PIN. El bucle debe repetirse mientras el pinIngresado sea diferente al pinCorrecto.
+Cuando el usuario acierte, muestra un mensaje de bienvenida usando su nombre (usa una variable de nombre de ejercicios anteriores).
+*/
+/*
+let usuario;
+let pinCorrecto = '1234';
+let pinIngresado;
+
+while(pinCorrecto != pinIngresado){
+    usuario = prompt('Ingrese su nombre');
+    pinIngresado = prompt('Ingrese su pin');
+}
+
+let mensaje = `Bienvenido/a ${usuario}`;
+console.log(mensaje);
+*/
+
+/*
+Nivel 3: (Limpiador de Array)
+Crea un array llamado frutas con: "manzana", "banana", "pera", "uva".
+Usando un bucle while, ve eliminando el último elemento del array uno por uno (usa .pop()).
+En cada vuelta, muestra en consola: "Eliminando fruta... Quedan [cantidad] frutas".
+El bucle debe detenerse cuando el array esté vacío (pista: usa .length > 0 como condición).
+*/
+
+/*
+let frutas = ['manzana', 'banana', 'pera', 'uva'];
+
+while(frutas.length>0){
+    frutaEliminada = frutas.pop();
+    console.log(`Eliminando fruta ${frutaEliminada}. Quedan ${frutas.length} frutas.`);
+}
+*/
+
+/*
+Nivel 4: (El acumulador de la suerte)
+Crea una variable sumaTotal que empiece en 0.
+Usando un bucle do while:
+Genera un número aleatorio entre 1 y 10.
+Súmalo a sumaTotal.
+Muestra en consola: "Salió el número [random]. La suma actual es: [sumaTotal]".
+La condición de salida del bucle es que sumaTotal sea mayor a 50.
+Al final, usa un ternario para mostrar: si la suma es par, "Resultado par", si no, "Resultado impar".
+*/
+
+/*
+let sumaTotal = 0;
+
+do{
+    let numero = Math.round(Math.random()*(10-1)+1);
+    sumaTotal += numero;
+    console.log(`Salio el numero ${numero}, la suma actual es ${sumaTotal}`);
+}while(sumaTotal<=50);
+
+(sumaTotal%2 == 0) ? console.log('Resultado par') : console.log('Resultado impar');
+
+*/
+/*
+Nivel 5: (El buscador inteligente)
+Crea un array de 5 nombres de ciudades.
+Pide al usuario mediante un prompt que escriba el nombre de una ciudad para buscarla.
+Limpia el texto del usuario (espacios y minúsculas).
+Crea una variable encontrado que empiece en false y un indice que empiece en 0.
+Usando un bucle while, recorre el array de ciudades:
+Compara la ciudad del array en la posición indice con la ciudad que escribió el usuario.
+Si coinciden, cambia encontrado a true.
+¡No olvides sumar 1 al indice para no crear un bucle infinito!
+Al final, usa un if-else para decir si la ciudad se encontró o no en la lista.
+*/
+
+/*
+let ciudades = ['Cordoba', 'Buenos aires', 'Santa Fe', 'Salta', 'Jujuy'];
+
+let ciudad = prompt('Introduza una ciudad');
+let ciudadLimpia = ciudad.trim();
+let ciudadOk = ciudadLimpia[0].toUpperCase() + ciudadLimpia.slice(1).toLowerCase();
+let encontrado = false;
+let indice = 0;
+
+while(indice<ciudades.length){
+    if (ciudad === ciudades[indice]){
+        encontrado = true;
+    }
+    indice++;
+}
+
+if (encontrado){
+    console.log(`¡Genial! ${ciudadOk} está en nuestra lista.`);
+}else{
+    console.log(`Lo siento, ${ciudadOk} no se encuentra.`);
+}
+*/
+
 
 /* ======================== BUCLE FOR ======================== */
 
@@ -94,6 +211,30 @@ for(i=0;i<numbers2.length;i++){
     console.log(`i vale ${i} y el valor de esa posicion en el array es ${numbers2[i]}`);
 }
 */
+
+/******************************************EJERCICIOS**********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ======================== BUCLE FOR OF / FOT IN ======================== */
