@@ -214,6 +214,76 @@ for(i=0;i<numbers2.length;i++){
 
 /******************************************EJERCICIOS**********************************************/
 
+/*
+/*
+Nivel 1: (La tabla de multiplicar)
+Declara una variable numeroTabla con el valor 7 (o el que prefieras).
+Crea un bucle for que se repita 10 veces.
+En cada vuelta, debe mostrar en consola la operación completa.
+(Ejemplo esperado: "7 x 1 = 7", "7 x 2 = 14" ... hasta el 10).
+*/
+
+/*
+let numeroTabla = 7;
+
+for(let i = 1; i<=10; i++){
+    let resultado = numeroTabla * i;
+    console.log(`${numeroTabla} x ${i} = ${resultado}`);
+}
+*/
+
+
+/*
+Nivel 2: (El limpiador de invitados)
+Crea un array llamado invitados con 5 nombres que estén "sucios" (con espacios y mayúsculas mezcladas, ej: " mArTa ", " pEPe ").
+Crea un bucle for que recorra todo el array usando .length.
+Dentro del bucle:
+Limpia el nombre de la posición actual (trim y Capitalize: Primera Mayúscula, resto minúscula).
+Muestra un mensaje: "Invitado #[i]: [Nombre Limpio]" (donde [i] es el número de la vuelta actual).
+*/
+
+/*
+let invitados = [' Juan', 'mArta  ', '  sUSana  ', 'ANALIA', 'viviana'];
+
+for(let i = 0; i<invitados.length; i++){
+    let nombreActual = invitados[i].trim();
+    let nombreFormateado = nombreActual[0].toUpperCase() + nombreActual.slice(1).toLowerCase();
+    console.log(`Invitado #${i}: ${nombreFormateado}`);
+}
+*/
+
+/*
+Nivel 3: (El Auditor de Inventario)
+Imagina que auditas una tienda de tecnología:
+Crea un array precios con los valores: 45, 120, 30, 85, 200, 50.
+Crea una variable sumaTotal que empiece en 0.
+Crea un bucle for que recorra el array:
+Si el precio es mayor a 100, aplica un descuento del 15% antes de sumarlo.
+Si el precio es menor o igual a 100, súmalo directamente a sumaTotal.
+Muestra en cada vuelta: "Precio procesado: [valor final]".
+Al terminar el bucle, muestra el total final con un mensaje elegante.
+Reto Extra: Usa un operador ternario dentro del bucle para decidir si el precio lleva descuento o no.
+*/
+
+/*
+let precios = [45, 120, 30, 85, 200, 50];
+let sumaTotal = 0;
+
+
+for(let i =0; i<precios.length; i++){
+    let valorFinal;
+    if(precios[i]>100){
+        let descuento = (precios[i]*15)/100;
+        valorFinal = precios[i]-descuento;
+    }else{
+        valorFinal = precios[i];
+    }
+    sumaTotal+=valorFinal;
+    console.log(`Precio procesado: ${valorFinal}`);
+}
+
+console.log(`Al terminar de hacer la auditoria la suma total de los productos es ${sumaTotal}`);
+*/
 
 
 
@@ -221,23 +291,7 @@ for(i=0;i<numbers2.length;i++){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================== BUCLE FOR OF / FOT IN ======================== */
+/* ======================== BUCLE FOR OF / FOR IN ======================== */
 
 /*
 - Simplifica el bucle for tradicional sin tener que darle un numero de vueltas ni realizar un incremento
@@ -276,3 +330,57 @@ for (let i =0; i<names.length; i++){
         console.log(names[i]);
 }
 */
+
+/******************************************EJERCICIOS**********************************************/
+
+
+/*
+Nivel 1: (El desfile de nombres)
+Crea un array con 4 nombres de superhéroes o personajes favoritos.
+Usa un bucle for...of para recorrer el array.
+En cada vuelta, muestra en consola el mensaje: "Personaje: [nombre]" convirtiendo el nombre a MAYÚSCULAS.
+*/
+
+let personajes = ['juan', 'pedro', 'marta', 'analia'];
+
+for(let personaje of personajes){
+    console.log(personaje.toUpperCase());
+}
+
+/*
+Nivel 2: (El filtro de notas)
+Crea un array llamado notas con los valores: 4, 8, 3, 10, 5, 2, 7.
+Usa un bucle for...of para recorrer las notas.
+Dentro del bucle, usa un operador ternario para decidir:
+Si la nota es mayor o igual a 6, imprime: "Nota [valor]: APROBADO".
+Si es menor a 6, imprime: "Nota [valor]: DESAPROBADO".
+*/
+
+let notas = [4, 8, 3, 10, 5, 2, 7];
+
+for(let nota of notas){
+    (nota>=6) ? console.log(`Nota ${nota}: APROBADO`) : console.log(`Nota ${nota}: DESAPROBADO`);
+}
+
+/*
+Nivel 3: (El organizador de almacén)
+Vamos a combinar lo que sabemos de índices y valores:
+Crea un array llamado productos con: "Laptop", "Mouse", "Monitor", "Teclado".
+Usa un bucle for...in para recorrer los índices del array.
+En cada vuelta, usa ese índice para acceder al valor del producto y muestra en consola un mensaje como este:
+"Producto n°[índice + 1] en stock: [valor_del_producto]"
+(Ojo: como el índice es un número en forma de texto, quizás necesites transformarlo o tener cuidado al sumar 1).
+Extra: Usa un if dentro del bucle para que, si el nombre del producto tiene más de 6 letras, le agregue el texto "(Producto Grande)" al mensaje.
+*/
+
+let productos = ["Laptop", "Mouse", "Monitor", "Teclado"];
+
+for(let producto in productos){
+    let nombre = productos[producto];
+    let numero = Number(producto)+1;
+    let mensaje = `Producto n° ${numero} en stock: ${nombre}`;
+    if (nombre.length>6){
+        mensaje += ' Producto Grande';
+    }
+    console.log(mensaje);
+}
