@@ -2,11 +2,12 @@
 1 - Solicita un nombre, la edad y muestra por consola el mensaje "Hola ____, tienes ____ años y el año que viene tendrás ____ años" Realiza el ejercicio con prompt(mensaje) y haz uso de los template strings
 */
 
-// let name = prompt('Introcude tu nombre');
-// let age = parseInt(prompt('Introcude tu edad'));
+/*
+let name = prompt('Introcude tu nombre');
+let age = parseInt(prompt('Introcude tu edad'));
 
-// console.log(`Hola ${name} tienes ${age} años y el año que viene tendras ${age+=1} años`);
-
+console.log(`Hola ${name} tienes ${age} años y el año que viene tendras ${age+=1} años`);
+*/
 
 /*
 2 - Escribe un programa que pueda calcular el área de 3 figuras geométricas, triángulo, rectángulo y círculo. En primer lugar pregunta de qué figura se quiere calcular el área, después solicita los datos que necesites para calcularlo.

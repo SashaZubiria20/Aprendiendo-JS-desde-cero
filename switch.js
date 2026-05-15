@@ -6,7 +6,8 @@
 //    //codigo
 //    breack;
 //    case n2:
-//    //codigobreack;
+//    //codigo
+//    breack;
 //    default:
 //    //codigo
 // }
@@ -22,7 +23,7 @@
 //         //codigo
 //     }
 
-/*
+
 
 let n4 = 2;
 
@@ -48,7 +49,7 @@ switch(n4){
     case 4:
         console.log(`${n4} es par`);
 }
-*/
+
 
 
 /******************************************EJERCICIOS**********************************************/

@@ -1,7 +1,7 @@
 // ********** Strings
 // Propiedades:
 
-/*
+
 // length: devuelve la longitud de la cadena
 
 let cadena = "Hola Mundo";
@@ -88,7 +88,7 @@ console.log("Hola " + nombre2 + " " + apellido2 + ". Tienes " + edad2 + " años.
 // asi seria con template string
 console.log(`Hola ${nombre2} ${apellido2}. Tienes ${edad2} años.`);
 
-*/
+
 
 /******************************************EJERCICIOS**********************************************/
 

@@ -63,7 +63,7 @@ Dentro del bucle, resta 1 al contador en cada vuelta.
 Al salir del bucle, muestra el mensaje: "¡DESPEGUE! 🚀".
 */
 
-/*
+
 let contador = 10;
 
 while (contador>0){
@@ -71,7 +71,7 @@ while (contador>0){
     contador --
 };
 console.log('DESPEGUE! 🚀');
-*/
+
 
 /*
 Nivel 2: (El cajero persistente)
@@ -80,7 +80,7 @@ Declara una variable pinIngresado vacía.
 Usando un bucle while, pide al usuario mediante un prompt que ingrese su PIN. El bucle debe repetirse mientras el pinIngresado sea diferente al pinCorrecto.
 Cuando el usuario acierte, muestra un mensaje de bienvenida usando su nombre (usa una variable de nombre de ejercicios anteriores).
 */
-/*
+
 let usuario;
 let pinCorrecto = '1234';
 let pinIngresado;
@@ -92,7 +92,7 @@ while(pinCorrecto != pinIngresado){
 
 let mensaje = `Bienvenido/a ${usuario}`;
 console.log(mensaje);
-*/
+
 
 /*
 Nivel 3: (Limpiador de Array)
@@ -102,14 +102,14 @@ En cada vuelta, muestra en consola: "Eliminando fruta... Quedan [cantidad] fruta
 El bucle debe detenerse cuando el array esté vacío (pista: usa .length > 0 como condición).
 */
 
-/*
+
 let frutas = ['manzana', 'banana', 'pera', 'uva'];
 
 while(frutas.length>0){
     frutaEliminada = frutas.pop();
     console.log(`Eliminando fruta ${frutaEliminada}. Quedan ${frutas.length} frutas.`);
 }
-*/
+
 
 /*
 Nivel 4: (El acumulador de la suerte)
@@ -122,7 +122,7 @@ La condición de salida del bucle es que sumaTotal sea mayor a 50.
 Al final, usa un ternario para mostrar: si la suma es par, "Resultado par", si no, "Resultado impar".
 */
 
-/*
+
 let sumaTotal = 0;
 
 do{
@@ -133,7 +133,8 @@ do{
 
 (sumaTotal%2 == 0) ? console.log('Resultado par') : console.log('Resultado impar');
 
-*/
+
+
 /*
 Nivel 5: (El buscador inteligente)
 Crea un array de 5 nombres de ciudades.
@@ -147,7 +148,7 @@ Si coinciden, cambia encontrado a true.
 Al final, usa un if-else para decir si la ciudad se encontró o no en la lista.
 */
 
-/*
+
 let ciudades = ['Cordoba', 'Buenos aires', 'Santa Fe', 'Salta', 'Jujuy'];
 
 let ciudad = prompt('Introduza una ciudad');
@@ -157,7 +158,7 @@ let encontrado = false;
 let indice = 0;
 
 while(indice<ciudades.length){
-    if (ciudad === ciudades[indice]){
+    if (ciudadOk === ciudades[indice]){
         encontrado = true;
     }
     indice++;
@@ -168,7 +169,14 @@ if (encontrado){
 }else{
     console.log(`Lo siento, ${ciudadOk} no se encuentra.`);
 }
-*/
+
+
+
+
+
+
+
+
 
 
 /* ======================== BUCLE FOR ======================== */
@@ -215,7 +223,6 @@ for(i=0;i<numbers2.length;i++){
 /******************************************EJERCICIOS**********************************************/
 
 /*
-/*
 Nivel 1: (La tabla de multiplicar)
 Declara una variable numeroTabla con el valor 7 (o el que prefieras).
 Crea un bucle for que se repita 10 veces.
@@ -223,14 +230,14 @@ En cada vuelta, debe mostrar en consola la operación completa.
 (Ejemplo esperado: "7 x 1 = 7", "7 x 2 = 14" ... hasta el 10).
 */
 
-/*
+
 let numeroTabla = 7;
 
 for(let i = 1; i<=10; i++){
     let resultado = numeroTabla * i;
     console.log(`${numeroTabla} x ${i} = ${resultado}`);
 }
-*/
+
 
 
 /*
@@ -242,7 +249,7 @@ Limpia el nombre de la posición actual (trim y Capitalize: Primera Mayúscula, 
 Muestra un mensaje: "Invitado #[i]: [Nombre Limpio]" (donde [i] es el número de la vuelta actual).
 */
 
-/*
+
 let invitados = [' Juan', 'mArta  ', '  sUSana  ', 'ANALIA', 'viviana'];
 
 for(let i = 0; i<invitados.length; i++){
@@ -250,7 +257,7 @@ for(let i = 0; i<invitados.length; i++){
     let nombreFormateado = nombreActual[0].toUpperCase() + nombreActual.slice(1).toLowerCase();
     console.log(`Invitado #${i}: ${nombreFormateado}`);
 }
-*/
+
 
 /*
 Nivel 3: (El Auditor de Inventario)
@@ -265,9 +272,9 @@ Al terminar el bucle, muestra el total final con un mensaje elegante.
 Reto Extra: Usa un operador ternario dentro del bucle para decidir si el precio lleva descuento o no.
 */
 
-/*
+
 let precios = [45, 120, 30, 85, 200, 50];
-let sumaTotal = 0;
+let sumaTotal1 = 0;
 
 
 for(let i =0; i<precios.length; i++){
@@ -278,12 +285,12 @@ for(let i =0; i<precios.length; i++){
     }else{
         valorFinal = precios[i];
     }
-    sumaTotal+=valorFinal;
+    sumaTotal1+=valorFinal;
     console.log(`Precio procesado: ${valorFinal}`);
 }
 
-console.log(`Al terminar de hacer la auditoria la suma total de los productos es ${sumaTotal}`);
-*/
+console.log(`Al terminar de hacer la auditoria la suma total de los productos es ${sumaTotal1}`);
+
 
 
 
@@ -298,15 +305,15 @@ console.log(`Al terminar de hacer la auditoria la suma total de los productos es
 
 */
 
-// let names = ['Paco','Jose','Paula','Maria'];
+let names = ['Paco','Jose','Paula','Maria'];
 
-// for(let name of names){
-//     console.log(name);
-// }
+for(let name of names){
+    console.log(name);
+}
 
-// for(let index in names){
-//     console.log(index);
-// }
+for(let index in names){
+    console.log(index);
+}
 
 // El for of recorre el array y nos devuelve el valor en cada posicion, el for in recorre el array (sirve mas para recorrer objetos) y devuelve el numero de indice.
 
@@ -315,7 +322,7 @@ console.log(`Al terminar de hacer la auditoria la suma total de los productos es
 Palabras reservadas de bucles_
     - breack: Rompe el bucle
     - continue: Se salta la(s) posiciones que le indiquemos y despues continua su ejecucion
-
+*/
 for (let i =0; i<names.length; i++){
     if(names[i]==='Paula'){
         break
@@ -329,7 +336,7 @@ for (let i =0; i<names.length; i++){
     }
         console.log(names[i]);
 }
-*/
+
 
 /******************************************EJERCICIOS**********************************************/
 
@@ -372,6 +379,7 @@ En cada vuelta, usa ese índice para acceder al valor del producto y muestra en 
 (Ojo: como el índice es un número en forma de texto, quizás necesites transformarlo o tener cuidado al sumar 1).
 Extra: Usa un if dentro del bucle para que, si el nombre del producto tiene más de 6 letras, le agregue el texto "(Producto Grande)" al mensaje.
 */
+
 
 let productos = ["Laptop", "Mouse", "Monitor", "Teclado"];
 

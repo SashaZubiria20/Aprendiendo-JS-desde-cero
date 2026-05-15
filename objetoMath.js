@@ -18,7 +18,7 @@
 // - Math.trunc(): Similar a floor pero simplemente "corta" los decimales sin importar si el número es positivo o negativo.
 
 
-/*
+
 console.log(Math.E);
 console.log(Math.PI);
 
@@ -51,7 +51,6 @@ console.log(Math.sign(0));
 console.log(Math.sqrt(9));
 console.log(Math.sqrt(2));
 
-*/
 
 
 /******************************************EJERCICIOS**********************************************/
@@ -67,12 +66,12 @@ Muestra en consola un Template String que diga: "La base [base] elevada al [expo
 let base = 5;
 let exponente = 3;
 
-let result = Math.pow(base,exponente);
-console.log(result);
-let raiz = Math.sqrt(result);
+let potencia = Math.pow(base,exponente);
+console.log(potencia);
+let raiz = Math.sqrt(potencia);
 console.log(raiz);
 
-console.log(`La base ${base} elevada al ${exponente} es ${result} y su raíz es ${raiz}`);
+console.log(`La base ${base} elevada al ${exponente} es ${potencia} y su raíz es ${raiz}`);
 
 /*
 Nivel 2: (Simulador de Dados y Suerte)

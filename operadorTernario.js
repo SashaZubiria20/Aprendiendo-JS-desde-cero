@@ -9,7 +9,7 @@
     // (primera sentencia,
     // segunda sentencia)
 
-/*
+
 let n5 = 2;
 
 (n5 % 2 == 0) ? console.log(`${n5} es par`) : console.log(`${n5} es impar`);
@@ -20,7 +20,6 @@ let n5 = 2;
 :
     console.log(`${n5} es impar`);
 
-*/
 
 
 /******************************************EJERCICIOS**********************************************/

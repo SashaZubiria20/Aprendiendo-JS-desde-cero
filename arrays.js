@@ -13,12 +13,12 @@ Los indices empiezan a contar desde 0
 */
 
 
-//let numeros = [1,2,3,4,5];
-//let palabras = ['Hola', 'como', 'estan'];
+let numeros = [1,2,3,4,5];
+let palabras = ['Hola', 'como', 'estan'];
 
-//console.log(numeros);
-//console.log(numeros[0]+numeros[2]);
-//console.log(`La palabra "${palabras[2]}" tiene ${palabras[2].length} letras`);
+console.log(numeros);
+console.log(numeros[0]+numeros[2]);
+console.log(`La palabra "${palabras[2]}" tiene ${palabras[2].length} letras`);
 
 
 // Propiedades:
@@ -27,7 +27,7 @@ Los indices empiezan a contar desde 0
 .length - Devuelve el numero de posiciones que contiene el array
 */
 
-//console.log(numeros.length);
+console.log(numeros.length);
 
 // ****************************************************** Metodos: ***************************************
 
@@ -35,7 +35,7 @@ Los indices empiezan a contar desde 0
 Array.isArray(variable a evaluar) - Devuelve true si la variable es un array.
 */
 
-//console.log(Array.isArray(numeros));
+console.log(Array.isArray(numeros));
 
 
 
@@ -46,11 +46,11 @@ Eliminar un elemento:
 .pop() - Elimina el ultimo elemento del array y devuelve ese elemento.
 */
 
-//console.log(numeros);
-//numeros.shift();  // let deleteElement = numbers.shift(); elimina el valor y lo guarda en esa variable
-//console.log(numeros);
-//numeros.pop();
-//console.log(numeros);
+console.log(numeros);
+numeros.shift();  // let deleteElement = numbers.shift(); elimina el valor y lo guarda en esa variable
+console.log(numeros);
+numeros.pop();
+console.log(numeros);
 
 
 
@@ -60,11 +60,11 @@ Eliminar un elemento:
 .unshift(elemento1, elemento2, .....) - Añade uno o mas elementos al comienzo del array y devuelve la nueva logitud.
 */
 
-//numeros.push(7);
-//console.log(numeros);
+numeros.push(7);
+console.log(numeros);
 
-//numeros.unshift(9,5);
-//console.log(numeros);
+numeros.unshift(9,5);
+console.log(numeros);
 
 
 
@@ -73,8 +73,8 @@ Eliminar un elemento:
 .indexof() - Devuelve el primer indice del elemento que coincida con el valor especificado, o -1 si ninguno es encontrado
 */
 
-// console.log(numeros);
-// console.log(numeros.indexOf(5));
+console.log(numeros);
+console.log(numeros.indexOf(5));
 
 
 
@@ -84,7 +84,7 @@ Eliminar un elemento:
 .lastIndexof() - Devuelve el ultimo indice del elemento que coincida con el valor especificado, o -1 si ninguno es encontrado
 */
 
-//console.log(numeros.lastIndexOf(3));
+console.log(numeros.lastIndexOf(3));
 
 
 
@@ -92,9 +92,9 @@ Eliminar un elemento:
 /*.reverse() - Devuelve el orden al reves de los elementos del array.
 */
 
-//console.log(numeros);
-//numeros.reverse();
-//console.log(numeros);
+console.log(numeros);
+numeros.reverse();
+console.log(numeros);
 
 
 
@@ -103,10 +103,10 @@ Eliminar un elemento:
 .join(separador) - Devuelve un string con el separador que indiquemos, por defecto son comas ,
 */
 
-//console.log(numeros);
-//console.log(numeros.join());
-//console.log(numeros);
-//console.log(numeros.join('-'));
+console.log(numeros);
+console.log(numeros.join());
+console.log(numeros);
+console.log(numeros.join('-'));
 
 
 
@@ -119,17 +119,17 @@ Eliminar un elemento:
     items - Elementos a añadir en el caso de que se añadan. (opcional)
 */
 
-//console.log(numeros);
-//numeros.splice(3);  // elimina desde la posicion que le indiquemos hasta el final
-//console.log(numeros);
+console.log(numeros);
+numeros.splice(3);  // elimina desde la posicion que le indiquemos hasta el final
+console.log(numeros);
 
-//console.log(numeros);
-//numeros.splice(2,2);  // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos
-//console.log(numeros);
+console.log(numeros);
+numeros.splice(2,2);  // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos
+console.log(numeros);
 
-//console.log(numeros);
-//numeros.splice(2,2,10,23,54); // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos y el tercer parametro lo agrega (pueden ser los que queramos) // si b vale 0 solo añade alementos
-//console.log(numeros);
+console.log(numeros);
+numeros.splice(2,2,10,23,54); // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos y el tercer parametro lo agrega (pueden ser los que queramos) // si b vale 0 solo añade alementos
+console.log(numeros);
 
 
 
@@ -139,18 +139,19 @@ Eliminar un elemento:
 .slice(a,b) - Extrae elementos de un array desde el indice a hasta el indice b. Si no existe b lo hace hasta el final, si no existe ni a ni b hace una copia del original.
 */
 
-// let newNumeros = numeros.slice();
-// console.log(numeros);
-// console.log(newNumeros);
+/*
+let newNumeros = numeros.slice();
+console.log(numeros);
+console.log(newNumeros);
 
-// let newNumeros = numeros.slice(2);
-// console.log(numeros);
-// console.log(newNumeros);
+let newNumeros = numeros.slice(2);
+console.log(numeros);
+console.log(newNumeros);
 
-// let newNumeros = numeros.slice(2,3);
-// console.log(numeros);
-// console.log(newNumeros);
-
+let newNumeros = numeros.slice(2,3);
+console.log(numeros);
+console.log(newNumeros);
+*/
 
 
 /******************************************EJERCICIOS**********************************************/
