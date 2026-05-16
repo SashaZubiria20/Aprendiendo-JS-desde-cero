@@ -83,13 +83,9 @@ let nombre = prompt('Introduza su nombre');
 let apellido = prompt('Introduza su apellido');
 
 const darBienvenida = (nombre, apellido) => {
-    let nombreLimpio = nombre.trim();
-    let apellidoLimpio = apellido.trim();
-    let nombre1 = nombreLimpio.slice(0,1).toUpperCase() + nombreLimpio.slice(1).toLowerCase();
-    let apellido1 = apellidoLimpio.slice(0,1).toUpperCase() + apellidoLimpio.slice(1).toLowerCase();
-    let nombreOk = nombre1;
-    let apellidoOk = apellido1;
-    console.log(`Bienvendo ${nombreOk}, ${apellidoOk}`);
+    let nombreOk = nombre.trim()[0].toUpperCase() + nombre.trim().slice(1).toLowerCase();
+    let apellidoOk = apellido.trim()[0].toUpperCase() + apellido.trim().slice(1).toLowerCase();
+    console.log(`Bienvendo ${nombreOk}, ${apellidoOk} bienvenido a JavaScript!`);
 };
 
 darBienvenida(nombre, apellido);

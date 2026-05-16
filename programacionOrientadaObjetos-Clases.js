@@ -83,6 +83,10 @@ console.log(juan.saludar());
 console.log(maria.saludar());
 */
 
+
+
+
+
 // ************************EJERCICIOS**************************
 
 /*
@@ -99,6 +103,7 @@ Crea una funcion que muestre los autores ordenados alfabeticamente.
 Crea una funcion que pida un genero y muestre la informacion de los libros que pertenezcan a ese genero usando el metodo que devuelve la informacion
 */
 
+/*
 class Book{
     constructor(title, author, year, gender){
         this.title = title
@@ -161,3 +166,104 @@ const showGender = () => {
 showAllBooks()
 showAuthors()
 showGender()
+
+*/
+
+
+/******************************************EJERCICIOS**********************************************/
+
+
+/*
+Nivel 1: (El Molde de Personajes)
+Crea una clase llamada Personaje.
+El constructor debe recibir: nombre, clase (guerrero, mago, etc.) y nivel.
+Crea un método llamado describir que retorne un Template String: "Soy [nombre], un [clase] de nivel [nivel]".
+Instancia (crea) dos personajes distintos y muestra en consola el resultado de llamar al método describir de cada uno.
+*/
+
+class Personaje{
+    constructor(nombre, clase, nivel){
+        this.nombre = nombre
+        this.clase = clase
+        this.nivel = nivel
+    }
+    descubrir(){
+        return `Soy ${this.nombre}, un clase ${this.clase} de nivel ${this.nivel}`;
+    }
+}
+
+const personaje1 = new Personaje ('Clark', 'Guerrero', 10);
+const personaje2 = new Personaje ('Magda', 'Maga', 15);
+
+console.log(personaje1.descubrir());
+console.log(personaje2.descubrir());
+
+/*
+Nivel 2: (La Cuenta de Ahorros)
+Crea una clase Cuenta.
+El constructor recibe: titular y saldo (que empieza en 0 por defecto).
+Agrega un método llamado ingresar(cantidad) que sume ese monto al saldo actual.
+Agrega un método llamado retirar(cantidad) que reste el monto.
+Lógica extra: Usa un if para que, si el saldo es menor a la cantidad que quiere retirar, muestre un error: "Fondos insuficientes".
+Crea una cuenta, ingresa 500, retira 200 y muestra el saldo final.
+*/
+
+
+class Cuenta{
+    constructor(titular, saldo){
+        this.titular = titular
+        this.saldo = saldo
+    }
+    ingresar(cantidad){
+        return this.saldo += cantidad
+    }
+
+    retirar(cantidad){
+        if(this.saldo<cantidad){
+            return console.log('Fondos insuficientes');
+        }else{
+            return this.saldo -= cantidad
+        }
+    }
+}
+
+const cuenta1 = new Cuenta ('Juan', 0);
+console.log(cuenta1.ingresar(500));
+console.log(cuenta1.retirar(200));
+console.log(`El saldo final de la cuenta es ${cuenta1.saldo}`);
+
+
+/*
+Nivel 3: (El Gestor de Concesionaria)
+Crea una clase Auto. Debe tener marca, modelo y precio.
+Agrega un método aplicarDescuento(porcentaje) que reduzca el precio del auto según el número recibido.
+Afuera de la clase, crea un Array llamado concesionaria que contenga 3 instancias (objetos) de la clase Auto.
+Usa un bucle for...of para recorrer el array concesionaria.
+Dentro del bucle:
+Si el precio del auto es mayor a 20.000, aplícale un descuento del 10% usando el método de la clase.
+Muestra un mensaje: "Auto: [marca] [modelo] | Precio Final: $[precio]".
+*/
+
+class Auto{
+    constructor(marca, modelo, precio){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.precio = precio;
+    }
+    aplicarDescuento(porcentaje){
+        this.precio = this.precio - (this.precio * porcentaje / 100);
+    }
+}
+
+let concesionaria = [
+    new Auto ('Fiat', 'Palio', 10000),
+    new Auto ('Peugeot', '208', 21000),
+    new Auto ('Fiat', 'Cronos', 25000)
+];
+
+for(const auto of concesionaria){
+    if (auto.precio > 20000) {
+        auto.aplicarDescuento(10);
+    }
+    console.log(`Auto: ${auto.marca} ${auto.modelo} | Precio Final: $${auto.precio}`);
+};
