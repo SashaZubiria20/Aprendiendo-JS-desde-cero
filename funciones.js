@@ -134,4 +134,15 @@ const procesarInventario = (inventario) =>{
     }
     return `Se procesaron ${inventario.length} productos correctamente`;
 }
-console.log(procesarInventario(inventario));
+
+let a = procesarInventario(inventario);
+console.log(a);
+
+
+let frutas = [
+    {nombre: 'manzana', precio: 150},
+    {nombre: 'banana', precio: 200},
+    {nombre: 'pera', precio: 500},
+    {nombre: 'uva', precio: 100},
+];
+console.log(procesarInventario(frutas));
