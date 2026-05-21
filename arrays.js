@@ -38,8 +38,6 @@ Array.isArray(variable a evaluar) - Devuelve true si la variable es un array.
 console.log(Array.isArray(numeros));
 
 
-
-
 /*
 Eliminar un elemento:
 .shift() - Elimina el primer elemento del array y devuelve ese elemento.
@@ -51,8 +49,6 @@ numeros.shift();  // let deleteElement = numbers.shift(); elimina el valor y lo 
 console.log(numeros);
 numeros.pop();
 console.log(numeros);
-
-
 
 
 /* Añadir elementos:
@@ -67,8 +63,6 @@ numeros.unshift(9,5);
 console.log(numeros);
 
 
-
-
 /*
 .indexof() - Devuelve el primer indice del elemento que coincida con el valor especificado, o -1 si ninguno es encontrado
 */
@@ -77,16 +71,11 @@ console.log(numeros);
 console.log(numeros.indexOf(5));
 
 
-
-
-
 /*
 .lastIndexof() - Devuelve el ultimo indice del elemento que coincida con el valor especificado, o -1 si ninguno es encontrado
 */
 
 console.log(numeros.lastIndexOf(3));
-
-
 
 
 /*.reverse() - Devuelve el orden al reves de los elementos del array.
@@ -98,7 +87,6 @@ console.log(numeros);
 
 
 
-
 /*
 .join(separador) - Devuelve un string con el separador que indiquemos, por defecto son comas ,
 */
@@ -107,8 +95,6 @@ console.log(numeros);
 console.log(numeros.join());
 console.log(numeros);
 console.log(numeros.join('-'));
-
-
 
 
 
@@ -124,14 +110,12 @@ numeros.splice(3);  // elimina desde la posicion que le indiquemos hasta el fina
 console.log(numeros);
 
 console.log(numeros);
-numeros.splice(2,2);  // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos
+numeros.splice(2,2);  // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos en b
 console.log(numeros);
 
 console.log(numeros);
-numeros.splice(2,2,10,23,54); // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos y el tercer parametro lo agrega (pueden ser los que queramos) // si b vale 0 solo añade alementos
+numeros.splice(2,2,10,23,54); // elimina desde la posicion que le indiquemos, la cantidad de valores que le indiquemos en b y el tercer parametro lo agrega (pueden ser los que queramos) // si b vale 0 solo añade alementos
 console.log(numeros);
-
-
 
 
 
@@ -139,19 +123,20 @@ console.log(numeros);
 .slice(a,b) - Extrae elementos de un array desde el indice a hasta el indice b. Si no existe b lo hace hasta el final, si no existe ni a ni b hace una copia del original.
 */
 
-/*
-let newNumeros = numeros.slice();
-console.log(numeros);
+let numeros2 = [1,2,3,4,5];
+
+let newNumeros = numeros2.slice();
+console.log(numeros2);
 console.log(newNumeros);
 
-let newNumeros = numeros.slice(2);
-console.log(numeros);
-console.log(newNumeros);
+let newNumeros2 = numeros2.slice(2);
+console.log(numeros2);
+console.log(newNumeros2);
 
-let newNumeros = numeros.slice(2,3);
-console.log(numeros);
-console.log(newNumeros);
-*/
+let newNumeros3 = numeros2.slice(2,3);
+console.log(numeros2);
+console.log(newNumeros3);
+
 
 
 /******************************************EJERCICIOS**********************************************/
@@ -239,6 +224,8 @@ if(equipo.length>5){
 }
 
 
+
+
 // ************************* MAS METODOS *************************
 
 /* 
@@ -254,98 +241,93 @@ CONCEPTOS:
 
 /* .from(iterable) - Convierte en array el elemento iterable */
 
-//  let word = 'Hola mundo'
-//  console.log(Array.from(word));
-//  console.log(WebTransportDatagramDuplexStream.split(''));
-
+let word = 'Hola mundo'
+console.log(Array.from(word));
+console.log(word.split(''));
 
 
 
 /* .sort([callback]) - Ordena los elementos de un array alfabeticamente (valor Unicode), si le pasamos un callback los ordena en funcion del algoritmo que le pasemos. */
 
-// const letters = ['b', 'c', 'z', 'a']
-// const numbers = [1,8,100,300,3]
+const letters = ['b', 'c', 'z', 'a']
+const numbers4 = [1,8,100,300,3]
 
-// console.log(letters);
-// console.log(letters.sort());
+console.log(letters);
+console.log(letters.sort());
 
-// console.log(numbers.sort());
-// console.log(numbers.sort((a,b)=>a-b));
+console.log(numbers4);
+console.log(numbers4.sort());
+console.log(numbers4.sort((a,b)=>a-b));
+console.log(numbers4.sort((a,b)=>b-a));
 
-/* Recorre el array a travez de pares a-b / b-a, va comparando para saber cual es menor/mayor
-
-
+// Recorre el array a travez de pares a-b / b-a, va comparando para saber cual es menor/mayor
 
 
 
 /* .forEach(callback(currentValue, [index])) - Ejecuta la funcion indicada una vez por cada elemento del array. */
 
-// const numbers = [12, 25, 47, 84, 98]
+const numbers5 = [12, 25, 47, 84, 98]
 
-// numbers.forEach((number)=>console.log(number));
-/* number, se suele llamar element, imprime cada elemento del array*/
-
-// numbers.forEach((number, index) => console.log(`${number} esta en la posicion ${index}`));
-/* index, tambien se puede llamar como quiera pero imprime la poscixion del elemento en el array*/
+numbers5.forEach((pepe)=>console.log(pepe));
+// pepe, se suele llamar element, imprime cada elemento del array
+numbers5.forEach((pepe, index) => console.log(`${pepe} esta en la posicion ${index}`));
+// index, tambien se puede llamar como quiera pero imprime la poscixion del elemento en el array
 
 
 
 
 /* .some(callback) - Compueba si al menos un elemento del array cumple la condicion. */
 
-// const word = ['HTML', 'CSS', 'JavaScript', 'PHP']
+const word1 = ['HTML', 'CSS', 'JavaScript', 'PHP']
 
-// console.log(word.some(word => word.length>2));
-// console.log(word.some(word => word.length>5));
-// console.log(word.some(word => word.length>10));
-
-
+console.log(word1.some(word => word1.length>2));
+console.log(word1.some(word => word1.length>5));
+console.log(word1.some(word => word1.length>10));
 
 
 
 /* .every(callback) - Comprueba si todos los elementos del array cumplen la condicion. */
 
-// const word = ['HTML', 'CSS', 'JavaScript', 'PHP']
+const word2 = ['HTML', 'CSS', 'JavaScript', 'PHP']
 
-// console.log(word.every(word => word.length>3));
-// console.log(word.every(word => word.length>10));
-// console.log(word.every(word => word.length>2));
+console.log(word2.every(word => word2.length>3));
+console.log(word2.every(word => word2.length>10));
+console.log(word2.every(word => word2.length>2));
 
 
 
 
 /* .map(callback) - Transforma todos los elementos del array y devuelve un nuevo array. */
 
-// const numbers = [12, 25, 47, 84, 98]
-// console.log(numbers);
+const numbers6 = [12, 25, 47, 84, 98];
+console.log(numbers6);
 
-// numbers.map(number =>console.log(number*2));
+numbers6.map(number =>console.log(number*2));
 
 
-// const numbers2 = numbers.map(number => number*2);
-// console.log(numbers2);
+const numbers7 = numbers6.map(number => number*2); // Guardamos el resultado en la variable numbers7
+console.log(numbers7);
 
 
 
 
 /* .filter(callback) - Filtra todos los elementos del array que cumplan la condicion y devuelve un nuevo array. */
 
-// const numbers = [12, 25, 47, 84, 98]
-
-// const numbers2 = numbers.filter(number=>number>40)
-
-// console.log(numbers2);
-
-
-/* .reduce(callback) - Reduce todos los elementos del arra a un unico valor. */
-
-// const numbers = [1, 2, 3, 4, 5]
-
-// console.log(numbers.reduce((a,b)=>a+b));
-// console.log(numbers.reduce((a,b)=>a*b));
+const numbers8 = [12, 25, 47, 84, 98]
+console.log(numbers8);
+const numbers9 = numbers8.filter(number=>number>40); // Todos los elementos del array numbers8 que cumplen la condicion se guardaron en el nuevo array numbers9
+console.log(numbers9);
 
 
-/*
+/* .reduce(callback) - Reduce todos los elementos del arra a un unico valor. Va realizando la accion que le indiquemos a cada elemento del array a travez de pares*/
+
+const numbers10 = [1, 2, 3, 4, 5];
+
+console.log(numbers10.reduce((a,b)=>a+b)); // suma todos los elementos y devuelve un unico valor
+console.log(numbers10.reduce((a,b)=>a*b)); // multiplica todos los elementos y devuelve un solo valor
+
+
+// Creamos un array de objetos, en este caso de usuarios
 const users = [
     {
         name: 'user 1',
@@ -373,11 +355,93 @@ const users = [
     }
 ]
 
-const usersOnline = users.reduce((cont, user) => {
+const usersOnline = users.reduce((cont, user) => {   //cont es el elemento donde se van sumando los usuarios online, user es el elemento que va recorriendo reduce
     if(user.online) cont++
     return cont
-},0)
+},0) // si aca ponemos una coma le podemos dar un valor inicial, en este caso el 0
 
 console.log(`Hay ${usersOnline} usuarios conectados`);
 
+
+/******************************************EJERCICIOS**********************************************/
+
+/*
+Nivel 1: (El Transformador de Precios)
+Crea un array de números llamado preciosBase con los valores: 100, 200, 350, 500.
+Usa el método .map() para crear un nuevo array llamado preciosConDescuento.
+La lógica dentro del .map() debe ser: restarle un 10% a cada precio.
+Muestra ambos arrays en la consola para comparar el original con el nuevo.
 */
+
+let preciosBase = [100, 200, 350, 500];
+
+let preciosConDescuento = preciosBase.map(precio => precio-((precio*10)/100));
+console.log(preciosBase);
+console.log(preciosConDescuento);
+
+
+/*
+Nivel 2: (El Portero del VIP)
+Crea un array de objetos llamado invitados. Cada objeto debe tener: nombre y edad. (Crea al menos 5 invitados, algunos menores de 18 y otros mayores).
+Usa el método .filter() para crear un nuevo array llamado soloMayores.
+Usa el método .every() para verificar si todos los invitados en la lista original son mayores de 18 y muestra el resultado (true/false) en consola.
+Usa el método .some() para verificar si al menos uno se llama "Sasha" y muestra el resultado.
+*/
+
+const invitados = [
+    {
+        nombre: 'Juan',
+        edad: 20
+    },
+    {
+        nombre: 'Pedro',
+        edad: 17
+    },
+    {
+        nombre: 'Analia',
+        edad: 30
+    },
+    {
+        nombre: 'Maria',
+        edad: 23
+    },
+    {
+        nombre: 'Susana',
+        edad: 16
+    }
+];
+
+
+const soloMayores = invitados.filter(invitado => invitado.edad>18);
+console.log(soloMayores);
+console.log(invitados.every(mayor => mayor.edad>18));
+console.log(invitados.some(persona => persona==='Sasha'));
+
+/*
+Nivel 3: (El Gran Total de la Tienda)
+Vamos a usar .reduce(), el método más difícil pero poderoso:
+Crea una clase Producto que tenga nombre y precio.
+Crea un array llamado estanteria que contenga 4 instancias de la clase Producto con diferentes precios.
+Usa el método .forEach() para imprimir en consola cada producto con el formato: "Viendo producto: [nombre] - $[precio]".
+Usa el método .reduce() para calcular el precio total de todos los productos que hay en la estantería.
+Al final, muestra un Template String que diga: "El valor total de tu inventario es de $[total]".
+*/
+
+class Producto{
+    constructor(nombre, precio){
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+};
+
+let estanteria = [
+    new Producto ('Tele', 2000),
+    new Producto ('Cama', 1800),
+    new Producto ('Sillon', 2500),
+    new Producto ('Aire', 3000),
+];
+
+estanteria.forEach((producto)=>console.log(`Viendo producto: ${producto.nombre} - precio $${producto.precio}`));
+
+let valorTotal = estanteria.reduce((a,b)=> a + b.precio, 0);
+console.log(`El valor total de tu inventario es de $${valorTotal}`);

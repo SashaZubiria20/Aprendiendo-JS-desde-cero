@@ -122,14 +122,15 @@ let carrito = [
 const finalizarCompra = (carrito) =>{
     let total = 0;
     for(const producto of carrito){
+        let precioActual = producto.precio;
         switch(producto.categoria){
             case 'tecnologia':
-                producto.precio = producto.precio - (producto.precio*15)/100;
+                precioActual = precioActual - (precioActual*15)/100;
                 break;
             default:
         }
-        total += producto.precio;
-        console.log(`Producto ${producto.nombre} | Precio $${producto.precio}`);
+        total += precioActual;
+        console.log(`Producto ${producto.nombre} | Precio $${precioActual}`);
     }
     return `La suma total de todos los producto es $${total}`;
 }
