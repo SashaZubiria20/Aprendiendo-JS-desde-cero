@@ -21,9 +21,9 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 
 ### 4️⃣ Estructuras de Datos y Métodos Modernos
 *   **Arrays:** Índices, propiedad `.length` y métodos de manipulación.
-*   **Métodos Funcionales de Array:** Procesamiento avanzado con `.forEach()`, `.map()`, `.filter()`, `.some()`, `.every()` y `.reduce()`.
+*   **Métodos Funcionales de Array:** Procesamiento avanzado con `.forEach()`, `.map()`, `.filter()`, `.some()`, `.every()` y el potente `.reduce()`.
 *   **Objetos:** Estructuras clave-valor, Arrays de Objetos y recorrido dinámico.
-*   **Spread Operator:** Expansión de datos, copias de seguridad (inmutabilidad), unión de listas y eliminación de duplicados.
+*   **Spread Operator:** Expansión de datos, copias de seguridad (inmutabilidad) y unión de listas.
 
 ### 5️⃣ Modularización y Reutilización
 *   **Funciones:** Bloques reutilizables, parámetros, retorno de valores (`return`) y diferencia entre funciones tradicionales y **Arrow Functions**.
@@ -33,6 +33,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Clases:** Creación de plantillas o "moldes" para objetos.
 *   **Constructor:** Inicialización de propiedades y uso de `this`.
 *   **Métodos de Clase:** Definición de comportamientos específicos dentro del molde.
+
+### 7️⃣ Interacción con el Navegador (DOM)
+*   **Concepto de DOM:** El modelo de objetos que convierte el HTML en una estructura viva manipulable por JavaScript.
+*   **Nodos:** Identificación de tipos de nodo (1: Elemento, 3: Texto, 8: Comentario).
+*   **Seleccionadores:** Métodos para capturar elementos (`getElementById`, `querySelector`, `querySelectorAll`).
+*   **Conversión de Colecciones:** Transformación de `NodeList` en Arrays reales mediante **Array.from()** o **Spread Operator** para procesamiento avanzado.
 
 ## 🛠️ Cómo ver los ejercicios
 

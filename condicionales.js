@@ -139,9 +139,9 @@ if(respuesta2!=true) console.log("respuesta tiene el valor false");
 const numbers = document.getElementById(`numbers`);
 const result = document.getElementById(`result`);
 
-let n1=prompt(`Introduzca el primer número`);
-let n2=prompt(`Introduzca el segundo número`);
-let n3=prompt(`Introduzca el tercer número`);
+let n1=parseInt(prompt(`Introduzca el primer número`));
+let n2=parseInt(prompt(`Introduzca el segundo número`));
+let n3=parseInt(prompt(`Introduzca el tercer número`));
 
 numbers.textContent = `Los numeros introducidos son ${n1} ${n2} ${n3}`
 
