@@ -5,7 +5,7 @@ DOM (DOCUMENT OBJET MODEL) - MODELO DE OBJETOS DEL DOCUMENTO    // INTRODUCCION
 - No es Java Script, es una API (Aplicacion Programing Interface) que se utiliza a travez de JS.
 
 
-NODOS: cada parte del documento se considera un NODO - una etiqueta son un nodo, un comentario es un nodo, un contenido de una etiqueta es un nodo
+NODOS: cada parte del documento se considera un NODO - una etiqueta es un nodo, un comentario es un nodo, un contenido de una etiqueta es un nodo
 
 * Hay varios tipos de nodos, 12 en total, los mas utilizados son:
 - Element node - 1 (cualquier etiqueta HTML).
@@ -75,13 +75,13 @@ for (const nodo of hijos) {
 
 // Los eleentos siempre se guardan en una constante porque no van a cambiar.
 
-const title = document.getElementById('title'); // El parametro es un string por lo tanto va entre comillas, si lo tuvieramos guardado en una variable iria sin cimillas.
-console.log(title)  // Muestra en consola la etiqueta a la que accedimos a travez del id, en este caso el H1 con todas sus propiedades.
-console.log(title.textContent) // textContent = Es una propiedad que nos permite leer o editar el contenido, de forma dinamica, en el HTML no se modifica.
+const title2 = document.getElementById('title2'); // El parametro es un string por lo tanto va entre comillas, si lo tuvieramos guardado en una variable iria sin cimillas.
+console.log(title2)  // Muestra en consola la etiqueta a la que accedimos a travez del id, en este caso el H1 con todas sus propiedades.
+console.log(title2.textContent) // textContent = Es una propiedad que nos permite leer o editar el contenido, de forma dinamica, en el HTML no se modifica.
 
 // Para modificarlo podemos hacer
-title.textContent = 'Hola mundo';
-console.log(title.textContent)
+title2.textContent = 'Hola mundo';
+console.log(title2.textContent)
 
 
 
@@ -114,4 +114,5 @@ paragraphSpread.map(p => p.style.color = 'green');
 
 // O podemos usar el metodo Array.from
 const paragraphArray = Array.from(document.querySelectorAll ('.paragraph'));
-paragraphArray.map(p => p.style.color = 'red');
+paragraphArray.map(p => p.style.color = 'blue');
+

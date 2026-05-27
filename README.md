@@ -36,9 +36,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 
 ### 7️⃣ Interacción con el Navegador (DOM)
 *   **Concepto de DOM:** El modelo de objetos que convierte el HTML en una estructura viva manipulable por JavaScript.
-*   **Nodos:** Identificación de tipos de nodo (1: Elemento, 3: Texto, 8: Comentario).
-*   **Seleccionadores:** Métodos para capturar elementos (`getElementById`, `querySelector`, `querySelectorAll`).
-*   **Conversión de Colecciones:** Transformación de `NodeList` en Arrays reales mediante **Array.from()** o **Spread Operator** para procesamiento avanzado.
+*   **Nodos:** Identificación de tipos de nodo fundamentales (1: Elemento, 3: Texto, 8: Comentario).
+*   **Seleccionadores:** Métodos para capturar elementos específicos del HTML (`getElementById`, `querySelector`, `querySelectorAll`).
+*   **Conversión de Colecciones:** Transformación de `NodeList` en Arrays reales mediante **Array.from()** o el **Spread Operator** para permitir el uso de métodos avanzados como `.map()` o `.filter()`.
+*   **Modificación de Contenido:** Diferencia entre `textContent` (seguridad y texto plano) e `innerHTML` (inserción de etiquetas y estructuras HTML).
+*   **Manipulación de Atributos:** Gestión técnica de las etiquetas mediante los métodos `getAttribute` y `setAttribute`.
+*   **Gestión de Clases (classList):** Control dinámico de estilos y diseños mediante los métodos `add`, `remove`, `toggle`, `contains` y `replace`.
+*   **Captura de Datos:** Uso de la propiedad `.value` para obtener y procesar información de formularios en tiempo real.
 
 ## 🛠️ Cómo ver los ejercicios
 
