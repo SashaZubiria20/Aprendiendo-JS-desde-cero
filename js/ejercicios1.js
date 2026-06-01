@@ -6,7 +6,7 @@
 let name = prompt('Introcude tu nombre');
 let age = parseInt(prompt('Introcude tu edad'));
 
-console.log(`Hola ${name} tienes ${age} años y el año que viene tendras ${age+=1} años`);
+console.log(`Hola ${name} tienes ${age} años y el año que viene tendras ${age+1} años`);
 
 
 /*

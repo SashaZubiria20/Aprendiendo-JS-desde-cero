@@ -58,7 +58,7 @@ for (const nodo of hijos) {
 */
 
 
-/* ******************************** METODOS ***************************** */
+/* ******************************** METODOS DE SELECCION ***************************** */
 
 /*
 
@@ -87,7 +87,7 @@ console.log(title2.textContent)
 
 // *********************************************
 
-const paragraph = document.querySelector('.paragraph'); // Cuando usamos un querySelector lo que tenemos que pasar por parametro es un selector de CSS, no el nombre de la clase, por eso lleva el . adelante
+const paragraph = document.querySelector('.paragraph'); // Cuando usamos un querySelector lo que tenemos que pasar por parametro es un selector de CSS, no el nombre de la clase, por eso lleva el . adelante // Si pasamos un selector de elemento (etiqueta) no lleva .
 console.log(paragraph);
 
 // Como tenemos selector de CSS (.paragraph en este caso), todos los selectores de CSS llamados .paragraph son validos, lo que podriamos hacer para seleccionar otra clase con el mismo nombre, es usar seudo clases como nth-child(y el numero de elemento que queremos buscar)

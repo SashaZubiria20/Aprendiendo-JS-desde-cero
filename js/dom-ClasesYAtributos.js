@@ -36,7 +36,7 @@ title3.classList.replace('main-title', 'hola');  // Remplaza una clase
 console.log(title3);
 console.log(name);
 
-// Atributos directos
+// Atributos directos // no se llaman asi pero son los que no se desplegan en consola
 console.log(title3.id)
 console.log(title3.innerHTML);   // Devuelve todo el contenido dentro de una etiqueta, con todas las etiquetas dentro del elemento
 console.log(title3.textContent); // Devuelve todo el contenido dentro de una etiqueta en texto plano, sin las otras etiquetas

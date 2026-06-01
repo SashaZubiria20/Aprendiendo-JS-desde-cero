@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.seccion {
+    border-bottom: 1px solid rgb(187, 183, 183);
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.red{
+    background: red;
+}
+
+.green{
+    background: green;
+}
+
+.linkEvento{
+    display: block;
+}
+
+.caja{
+    width:100px;
+    height:100px;
+    background:gray;
+}
+
+.ejercicio{
+    display: block;
+}

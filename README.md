@@ -43,6 +43,10 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Manipulación de Atributos:** Gestión técnica de las etiquetas mediante los métodos `getAttribute` y `setAttribute`.
 *   **Gestión de Clases (classList):** Control dinámico de estilos y diseños mediante los métodos `add`, `remove`, `toggle`, `contains` y `replace`.
 *   **Captura de Datos:** Uso de la propiedad `.value` para obtener y procesar información de formularios en tiempo real.
+*   **Manejo de Eventos (Event Listeners):** Implementación de escuchadores activos mediante `addEventListener` para desacoplar la lógica del HTML.
+*   **Eventos de Usuario:** Gestión de interacciones de ratón (`click`, `dblclick`, `mouseenter`) y teclado (`input`).
+*   **Diferenciación de Propiedades:** Comprensión técnica de cuándo utilizar `.value` (elementos de formulario) frente a `.textContent` (nodos de texto).
+*   **Lógica Reactiva:** Creación de funciones que responden en tiempo real a las acciones del usuario, permitiendo validaciones dinámicas y cambios estéticos aleatorios.
 
 ## 🛠️ Cómo ver los ejercicios
 
