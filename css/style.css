@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+/* SECCIONES */
 .seccion {
     border-bottom: 1px solid rgb(187, 183, 183);
     padding: 20px 10px;
@@ -15,6 +17,8 @@ section:last-of-type {
     border-bottom: none;
 }
 
+
+/* DOM EVENTOS */
 .box{
     width: 50px;
     height: 50px;
@@ -41,4 +45,20 @@ section:last-of-type {
 
 .ejercicio{
     display: block;
+}
+
+/* DOM - EVENTO DOM */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.gallery__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
 }
