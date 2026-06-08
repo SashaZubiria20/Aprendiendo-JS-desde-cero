@@ -47,6 +47,11 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Eventos de Usuario:** Gestión de interacciones de ratón (`click`, `dblclick`, `mouseenter`) y teclado (`input`).
 *   **Diferenciación de Propiedades:** Comprensión técnica de cuándo utilizar `.value` (elementos de formulario) frente a `.textContent` (nodos de texto).
 *   **Lógica Reactiva:** Creación de funciones que responden en tiempo real a las acciones del usuario, permitiendo validaciones dinámicas y cambios estéticos aleatorios.
+*   **El Objeto Evento (e):** Acceso a la información técnica detallada generada automáticamente por el navegador tras cada interacción del usuario.
+*   **Identificación con e.target:** Localización precisa del elemento exacto que disparó el evento, facilitando su manipulación individual sin selecciones externas.
+*   **Control del Navegador (preventDefault):** Uso del "freno de mano" para evitar comportamientos nativos como la recarga de página en formularios o la navegación automática en enlaces.
+*   **Delegación de Eventos:** Técnica avanzada de optimización que consiste en asignar un solo evento a un elemento padre para gestionar las interacciones de todos sus hijos actuales y futuros.
+*   **Investigación de Propiedades (console.dir):** Explorar el árbol completo de propiedades internas de los objetos del DOM.
 
 ## 🛠️ Cómo ver los ejercicios
 

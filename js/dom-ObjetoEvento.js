@@ -19,7 +19,7 @@ input.addEventListener('keyup', () => {
     console.log(event);
 });
 
-// Entonces tenemos la opcion de enviar el evento como parametro por ejemplo una e (el nombre que queramos)
+// Entonces tenemos la opcion de enviar el evento como parametro de la funcion por ejemplo una e (el nombre que queramos)
 input.addEventListener('keyup', (e) => {
     console.log(e);
 });
@@ -37,9 +37,11 @@ boton2.addEventListener('click', (ev) => {
 
 /******************Evitar que se ejecute el evento*******************/
 // Existe un metodo que permite evitar que se ejecute el evento por defecto, por ejemplo a la hs de enviar un formulario para que no se recargue la pagina y no se envie el formulario // cuando trabajamos de forma asincrona y no queremos que se envie el formulario, es decir que no queremos que pase algo por defecto
+// Sirve para evitar cualquier comportamiento de HTML por defecto
+// preventDefault()
 
 form2.addEventListener('submit', (q) => {
-    q.preventDefault()
+    q.preventDefault();
     console.log('El formulario se ha enviado')
 })
 
@@ -49,6 +51,7 @@ form2.addEventListener('submit', (q) => {
 // Seleccionamos el elemento y le pasamos el evento como funcion
 // lo podemos usar cuando queramos que se dispare un evento pero no queremos esperar la intereaccion del usuario
 // form2.submit()
+// button.click()
 
 
 
@@ -81,3 +84,60 @@ gallery.addEventListener('click', (a) => {
 
 
 /******************************************EJERCICIOS**********************************************/
+
+/*
+Nivel 1: El Validador Silencioso (preventDefault)
+En tu formulario, haz que al intentar enviar (submit), se use preventDefault().
+Lógica: Si el input está vacío, muestra un mensaje en consola que diga: "Error: No puedes enviar un campo vacío".
+Si tiene texto, que diga: "Datos listos para ser enviados: " + el valor del input.
+*/
+
+const form3 = document.getElementById('form3');
+const input3 = document.getElementById('input3');
+
+form3.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (input3.value === ''){
+        console.log('Error: No puedes enviar un campo vacío');
+    }else{
+        console.log(`Datos listos para ser enviados: ${input3.value}`);
+    }
+});
+
+/*
+Nivel 2: El Portero de la Galería (Delegación con Filtro)
+Usa la delegación de eventos en tu gallery.
+Lógica: Al hacer clic en un número, en lugar de solo pintarlo de verde, haz que el texto de ese número cambie a la palabra "CLICK".
+Importante: Asegúrate con un if de que si haces clic en el espacio vacío (el padre), no pase absolutamente nada.
+*/
+
+gallery.addEventListener('click', (a) => {
+    if (a.target.classList.contains('gallery__item')) {
+        a.target.textContent = 'CLICK';
+        a.target.classList.add('green');
+    }
+});
+
+
+
+/*
+Nivel 3: El Teclado Inteligente (Objeto Evento Pro)
+Escucha el evento keydown en todo el documento (document.addEventListener...).
+Reto:
+Si el usuario presiona la tecla "r", todos los números de la galería que estén en verde deben volver a su color original (quitar la clase green).
+Si presiona la tecla "Enter", muestra una alerta que diga el valor actual de lo que esté escrito en el input.
+*/
+
+window.addEventListener('keydown', (a) => {
+    if(a.key === 'r' || a.key === 'R'){
+        const itemsVerdes = document.querySelectorAll('.gallery__item.green');
+        itemsVerdes.forEach(item => {
+            item.classList.remove('green');
+            item.textContent = item.dataset.numero
+        });
+        console.log("Galería reiniciada");
+    }
+    if (a.key === 'Enter') {
+        alert(`El valor del input es: ${input3.value}`);
+    }
+});
