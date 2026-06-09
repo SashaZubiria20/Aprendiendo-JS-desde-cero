@@ -52,6 +52,9 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Control del Navegador (preventDefault):** Uso del "freno de mano" para evitar comportamientos nativos como la recarga de página en formularios o la navegación automática en enlaces.
 *   **Delegación de Eventos:** Técnica avanzada de optimización que consiste en asignar un solo evento a un elemento padre para gestionar las interacciones de todos sus hijos actuales y futuros.
 *   **Investigación de Propiedades (console.dir):** Explorar el árbol completo de propiedades internas de los objetos del DOM.
+*   **Creación de Elementos:** Fabricación dinámica de etiquetas desde la memoria del navegador mediante el método `document.createElement()`.
+*   **Instanciación en el DOM:** Integración de nuevos nodos al árbol jerárquico mediante `appendChild()`, permitiendo la generación de interfaces reactivas.
+*   **Fragmentos de Código (DocumentFragment):** Implementación de contenedores temporales de alto rendimiento para realizar inserciones masivas de elementos, optimizando el renderizado y los recursos del navegador.
 
 ## 🛠️ Cómo ver los ejercicios
 

@@ -17,6 +17,12 @@ section:last-of-type {
     border-bottom: none;
 }
 
+/* EJERCICIOS */
+
+.ejercicios{
+    margin: 30px 0;
+}
+
 
 /* DOM EVENTOS */
 .box{
@@ -34,6 +40,11 @@ section:last-of-type {
     color: white;
 }
 
+.ejercicio{
+    display: block;
+}
+
+
 .linkEvento{
     display: block;
 }
@@ -42,10 +53,6 @@ section:last-of-type {
     width:100px;
     height:100px;
     background:gray;
-}
-
-.ejercicio{
-    display: block;
 }
 
 /* DOM - EVENTO DOM */
