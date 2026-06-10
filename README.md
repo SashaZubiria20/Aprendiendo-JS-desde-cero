@@ -55,6 +55,11 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Creación de Elementos:** Fabricación dinámica de etiquetas desde la memoria del navegador mediante el método `document.createElement()`.
 *   **Instanciación en el DOM:** Integración de nuevos nodos al árbol jerárquico mediante `appendChild()`, permitiendo la generación de interfaces reactivas.
 *   **Fragmentos de Código (DocumentFragment):** Implementación de contenedores temporales de alto rendimiento para realizar inserciones masivas de elementos, optimizando el renderizado y los recursos del navegador.
+*   **DOM Traversing (Recorrido del árbol):** Navegación técnica a través de la jerarquía de nodos para localizar elementos mediante sus relaciones familiares.
+*   **Navegación Ascendente:** Uso de `parentElement` para acceder a contenedores superiores y `closest()` para búsquedas inteligentes de ancestros específicos.
+*   **Navegación Descendente:** Gestión de colecciones de hijos mediante `children` y acceso directo a extremos con `firstElementChild` y `lastElementChild`.
+*   **Navegación Lateral (Siblings):** Movimiento entre elementos del mismo nivel utilizando `nextElementSibling` y `previousElementSibling`.
+*   **Diferenciación de Nodos:** Comprensión de la diferencia entre Nodos (que incluyen espacios y texto) y Elementos (etiquetas puras) para una navegación precisa y sin errores de renderizado.
 
 ## 🛠️ Cómo ver los ejercicios
 

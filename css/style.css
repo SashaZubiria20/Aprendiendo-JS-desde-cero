@@ -70,3 +70,27 @@ section:last-of-type {
     align-items: center;
     border: 1px solid black;
 }
+
+/* Esta seccion es de DOM - Traversing */
+
+.contenedorTareas{
+    padding: 20px;
+    border: 1px solid green;
+    width: 250px;
+}
+
+.a{
+    background: rgba(155, 13, 107, 0.25);
+}
+
+.letraAzul{
+    color: blue;
+}
+
+.letraRoja{
+    color: red;
+}
+
+.btnTraveling{
+    border: 3px solid black;
+}

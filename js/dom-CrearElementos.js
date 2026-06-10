@@ -29,12 +29,17 @@ itemList.textContent = 'Lunes';
 daysList.appendChild(itemList);
 
 
+//***********************************************
+
+
 // Escribir HTML en un elemento
 // si usamos la propiedad textContent el navegador interpreta todo como texto
 title4.textContent = 'Hola <span>JavaScript</span>';
-// Para insertar una etiqueta de HTML debemos usar la propiedad innerHTML
+// Para insertar una etiqueta de HTML y que el navegador las interprete, debemos usar la propiedad innerHTML
 title4.innerHTML = 'Hola <span>JavaScript</span>';
 
+
+//***********************************************
 
 // Para insertar los elementos del array en la lista
 // Como lo hacen ahora pero gasta muchos recursos
@@ -59,15 +64,21 @@ for (const day of days) {
 daysList.appendChild(fragment);
 console.log(fragment);
 
+
+//***********************************************
+
 // Para rellenar el select
+
+const fragment2 = document.createDocumentFragment()
+
 for (const day of days){
     const selectItem = document.createElement('OPTION');
-    selectItem.setAttribute('value',day.toLowerCase());
+    selectItem.setAttribute('value',day.toLowerCase()); // Cuando tratamos con un OPTION, tenemos que tocar el value, es lo que se envia cuando estamos trabajando con un lenguaje de backend, por ejemplo cuando se envian los formularios y el valor que lee es el Value. Como tenemos que enviar un valor, le asignamos el atributo value, y le enviamos el valor, en este caso lo de la variable day. Cuando se envian valores, no deben ser en mayusculas, por eso el toLowerCase()
     selectItem.textContent = day;
-    fragment.appendChild(selectItem);
+    fragment2.appendChild(selectItem);
 };
 
-selectDays.appendChild(fragment);
+selectDays.appendChild(fragment2);
 
 /******************************************EJERCICIOS**********************************************/
 /*
@@ -97,15 +108,15 @@ Final: Inyecta el fragmento completo en la lista #lista-skills.
 
 const skills = ['JavaScript', 'HTML5', 'CSS3', 'Git', 'Lógica de Programación'];
 const lista = document.getElementById('listaSkills');
-const fragment2 = document.createDocumentFragment()
+const fragment3 = document.createDocumentFragment()
 
 skills.forEach((skill) => {
     const item = document.createElement('LI');
     item.textContent = skill;
-    fragment2.appendChild(item);
+    fragment3.appendChild(item);
 });
 
-lista.appendChild(fragment2);
+lista.appendChild(fragment3);
 
 /*
 Nivel 3: El Selector de Lenguajes (Objetos + Atributos + Interacción)
@@ -124,16 +135,16 @@ const lenguajes = [
 ];
 
 const select = document.getElementById('selectLenguajes');
-const fragment3 = document.createDocumentFragment();
+const fragment4 = document.createDocumentFragment();
 
 for (const leng of lenguajes){
     const selectLeng = document.createElement('OPTION');
     selectLeng.textContent = leng.texto;
     selectLeng.setAttribute('value', leng.id);
-    fragment3.appendChild(selectLeng);
+    fragment4.appendChild(selectLeng);
 };
 
-select.appendChild(fragment3);
+select.appendChild(fragment4);
 
 select.addEventListener('change', () => {
     alert(`Has seleccionado el lenguaje con ID: ${select.value}`);

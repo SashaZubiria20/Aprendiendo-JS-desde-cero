@@ -155,7 +155,45 @@
 
 <!-- /***************************************************************************************/ -->
 
+<!-- Esta parte es del DOM - Traversing-->
 
+<section class="seccion">
+    <h2>*DOM - Recorrelo (DOM - Traversing)</h2>
+
+    <h3 id="title5">Hola JS</h3>
+    <nav>
+        <ul id="parent">
+            <li>son-1</li>
+            <li>son-2</li>
+            <li>son-3
+                <ul>
+                    <li>grandson-1</li>
+                    <li>grandson-2</li>
+                    <li>grandson-3</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- EJERCICIOS -->
+    <h2 class="ejercicios">Ejercicios:</h2>
+
+    <section id="seccionTraversing" class="seccion">
+    <h2>Reto de Traversing</h2>
+    
+    <div id="contenedorTareas" class="contenedorTareas">
+        <h3 id="tituloTarea">Lista de Compras</h3>
+        <ul id="listaCompras">
+            <li class="itemCompra">Pan</li>
+            <li class="itemCompra">Leche</li>
+            <li class="itemCompra" id="itemCentral">Huevos</li>
+            <li class="itemCompra">Café</li>
+        </ul>
+        <button id="btnLimpiar">Limpiar Lista</button>
+    </div>
+</section>
+</section>
 
 
 
@@ -185,6 +223,7 @@
     <!-- <script src="./js/dom-ClasesYAtributos"></script> -->
     <!-- <script src="./js/dom-Eventos.js"></script> -->
     <!-- <script src="./js/dom-ObjetoEvento.js"></script> -->
-    <script src="./js/dom-CrearElementos.js"></script>
+    <!-- <script src="./js/dom-CrearElementos.js"></script> -->
+    <script src="./js/dom-Traversing.js"></script>
 </body>
 </html>
