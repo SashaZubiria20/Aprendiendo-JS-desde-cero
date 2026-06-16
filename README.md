@@ -60,6 +60,11 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Navegación Descendente:** Gestión de colecciones de hijos mediante `children` y acceso directo a extremos con `firstElementChild` y `lastElementChild`.
 *   **Navegación Lateral (Siblings):** Movimiento entre elementos del mismo nivel utilizando `nextElementSibling` y `previousElementSibling`.
 *   **Diferenciación de Nodos:** Comprensión de la diferencia entre Nodos (que incluyen espacios y texto) y Elementos (etiquetas puras) para una navegación precisa y sin errores de renderizado.
+*   **Manipulación Avanzada del DOM:** Dominio de técnicas para la reestructuración dinámica del árbol de nodos.
+*   **Clonación de Estructuras:** Uso de `cloneNode(true)` para duplicar elementos complejos manteniendo su integridad y contenido.
+*   **Inserción Precisa:** Implementación de métodos modernos (`before`, `prepend`, `append`, `after`) y técnicos (`insertAdjacentHTML`) para el posicionamiento exacto de nuevos componentes.
+*   **Sustitución Dinámica:** Gestión de cambios de estado mediante `replaceWith()`, permitiendo el intercambio instantáneo de elementos en la interfaz.
+*   **Eliminación Técnica:** Remoción definitiva de nodos mediante el método `remove()`, optimizando la limpieza del DOM tras interacciones del usuario.
 
 ## 🛠️ Cómo ver los ejercicios
 

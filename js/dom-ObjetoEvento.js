@@ -1,5 +1,5 @@
 /*
-Este objeto consiste en darnos informacion sobre el evento
+Este objeto consiste en darnos informacion sobre el evento, usamos un parametro en la funcion, que nos brinda toda la info del evento
 El objeto evento, vive siempre y cuando haya un evento
 
 */

@@ -94,3 +94,21 @@ section:last-of-type {
 .btnTraveling{
     border: 3px solid black;
 }
+
+/* Esta seccion es de DOM - Insertar, clonar y borrar elementos */
+
+.contenedorPrincipal{
+    padding: 10px;
+    border: 1px solid blue;
+    margin: 10px;
+}
+
+.btnClon{
+    margin-top:
+    20px;
+}
+
+.div2EjerciciosClon{
+    background: red;
+    color: wheat;
+}
