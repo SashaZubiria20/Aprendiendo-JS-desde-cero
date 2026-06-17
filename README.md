@@ -65,6 +65,11 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Inserción Precisa:** Implementación de métodos modernos (`before`, `prepend`, `append`, `after`) y técnicos (`insertAdjacentHTML`) para el posicionamiento exacto de nuevos componentes.
 *   **Sustitución Dinámica:** Gestión de cambios de estado mediante `replaceWith()`, permitiendo el intercambio instantáneo de elementos en la interfaz.
 *   **Eliminación Técnica:** Remoción definitiva de nodos mediante el método `remove()`, optimizando la limpieza del DOM tras interacciones del usuario.
+*   **Gestión de Objetos Nativos:** Utilización de las APIs globales del navegador (`window`, `location`, `history`) para el control de la navegación y la interfaz de usuario.
+*   **Visualización de Datos:** Implementación de métodos avanzados de consola como `console.table()` para el análisis de estructuras de datos complejas y `console.dir()` para la inspección de objetos.
+*   **Manejo de Tiempo y Fechas:** Instanciación y manipulación del objeto `Date` para la gestión de marcas temporales.
+*   **Programación Asíncrona (Timers):** Control del flujo temporal mediante `setTimeout()` para ejecuciones diferidas y `setInterval()` para procesos cíclicos, optimizando la interactividad cronometrada.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
