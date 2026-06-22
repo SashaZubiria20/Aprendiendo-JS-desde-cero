@@ -31,10 +31,10 @@ console.table(person);
 Objeto location - Es el objeto que contiene la barra de direcciones
     https://developer.mozilla.org/es/docs/web/API/Location
 
-    location.href - Devuelve la direccion de la barra de navegacion, tambien nos permite cambiar la url e ir a otra pagina
+    location.href - Devuelve la direccion de la barra de navegacion, tambien nos permite cambiar la url e ir a otra pagina, por ejemplo location.href = 'link de pagina'
     location.protocol - Devuelve si es http: o https:
     location.host - Nos da el dominio principal
-    location.pathname - Nos da el resto de la localizacion, el dominio sin la parte principal
+    location.pathname - Nos da el resto de la localizacion, el dominio sin la parte principal, el directorio de donde estemos
     location.hash - es una forma de pasar parametros entre paginas, podemos usarlo para tener un solo html y en funcion del hash que pasemos cargar una info u otra
     location.reload() - Recarga la pagina
 */
@@ -50,7 +50,7 @@ Objeto history
     history.forward() - Para ir adelante
     history.go(n| -n) - Navegamos por el historia x paginas hacia adelante o x paginas hacia atras
 
-    length - Nos da la cantidad de paginas guardadas en el historial de esa pestaña, solo funciona sobre la secion en curso, no sobre todo el historial del navegador
+    length - Nos da la cantidad de paginas guardadas en el historial de esa pestaña, solo funciona sobre la secion en curso (pestaña en curso), no sobre todo el historial del navegador
 
 Trabaja con el historial de la pestaña en la que estamos navegando
 */
@@ -61,11 +61,16 @@ Objeto date
     https://www.w3schools.com/jsref_obj_date.asp
 
     Hay muchos metodos,para usarlo necesitamos instanciarlo.
+
 */
-
+// Necesitamos invocar al constructor de date para instanciarlo, una vez que lo tenemos podemos usar todos sus metodos
 const date = new Date()
-
+// por ejemplo el metodo getDay, nos da el dia, empieza a contar desde cero, es el calendario anglosajon,
 console.log(date.getDay());
+//Imprimir el dia y hs
+console.log(date);
+
+
 
 /*
 Timers:
@@ -74,7 +79,7 @@ Timers:
     Timeout:
     https://developer.mozilla.org/en-US/docs/web/API/windowOrworkerGlobalScope/setTimeout
 
-    setTimeout(()=>{code}, delay-in-milisecond) - Hace que se ejecute la funcion despues de deplay. Si lo referenciamos mediante una variable/constante podemos pararlo con clearTimeout(referencia)
+    setTimeout(()=>{code}, delay-in-milisecond) - Hace que se ejecute la funcion despues de delay. Si lo referenciamos mediante una variable/constante podemos pararlo con clearTimeout(referencia)
 
     Interval:
     https://developer.mozilla.org/en-US/docs/web/API/windowOrworkerGlobalScope/setInterval
@@ -82,14 +87,63 @@ Timers:
     setInterval(() =>{code}, delay-in-miliseconds) - Hace que se ejecute la funcion cada delay milisegundos. Si lo referenciamos mediante una variable/constante podemos pararlo con clearInterval(referencia)
 */
 
-// Si la funcion es externa no hay que poner los parentesis y la flecha de la funcion, si el codigo de la funcion, osea lo que se va a ejecutar va dentro si hay que ponerlo
+const saludar = () =>{
+    console.log('Hola');
+};
+
+// Si la funcion es externa no hay que poner los parentesis y la flecha de la funcion de setTimeout
 button.addEventListener('click', () =>{
-    //setTimeout(()=>saludar,3000)
-    setTimeout(()=>{
+    setTimeout(saludar,3000);
+});
+
+//si el codigo de la funcion, osea lo que se va a ejecutar va dentro si hay que ponerlo
+button.addEventListener('click', () =>{
+    setTimeout(() =>{
         console.log('Adios');
     },3000)
 });
 
-const saludar = () =>{
-    console.log('Hola')
+// Si quisieramos para esto con clearTimeout(referencia), el setTimeout debe estar en una constante
+
+const timeout = setTimeout(() =>{
+        console.log('Hola Pepe');
+    },3000);
+
+button.addEventListener('click', () =>{
+    clearTimeout(timeout);
+});
+
+
+/***************setInterval******************/
+
+const saludar2 = () =>{
+    console.log('Hola Maria');
 };
+// Si la funcion es externa
+// const Interval = setInterval(saludar2, 3000);
+
+
+
+// Si la funcion va a dentro
+
+/*
+let cont = 0;
+
+setInterval(() =>{
+    console.log(cont)
+    cont++
+},3000)
+*/
+
+// Si quisieramos pararlo
+
+let cont2 = 0;
+
+const internval = setInterval(() =>{
+    console.log(cont2)
+    cont2++
+},3000)
+
+button.addEventListener('click', () =>{
+    clearInterval(internval);
+});

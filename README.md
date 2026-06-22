@@ -70,6 +70,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Manejo de Tiempo y Fechas:** Instanciación y manipulación del objeto `Date` para la gestión de marcas temporales.
 *   **Programación Asíncrona (Timers):** Control del flujo temporal mediante `setTimeout()` para ejecuciones diferidas y `setInterval()` para procesos cíclicos, optimizando la interactividad cronometrada.
 
+### 8️⃣ Comunicación Asíncrona (AJAX)
+*   **Concepto de AJAX:** Implementación de técnicas de transferencia de datos en segundo plano para evitar recargas de página innecesarias.
+*   **Peticiones HTTP:** Dominio del objeto `XMLHttpRequest` para la gestión de solicitudes `GET` a servidores externos.
+*   **Consumo de APIs:** Conexión y extracción de datos en tiempo real desde servicios externos (JSONPlaceholder).
+*   **Tratamiento de JSON:** Uso de `JSON.parse()` para la transformación de respuestas de texto plano en objetos manipulables por JavaScript.
+*   **Optimización de Renderizado:** Integración de `DocumentFragment` con datos asíncronos para actualizar la interfaz de usuario de forma eficiente y limpia.
 
 ## 🛠️ Cómo ver los ejercicios
 
