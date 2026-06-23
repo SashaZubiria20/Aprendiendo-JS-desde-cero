@@ -53,7 +53,6 @@ const getData2 = (id) => {
             row.append(dataEmail);
             row.append(dataCity);
 
-            row.append(dataID, dataName, dataEmail, dataCity);
             fragment.append(row);
 
         }

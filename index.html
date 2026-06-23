@@ -267,7 +267,7 @@
 
 <!-- /***************************************************************************************/ -->
 
-<!-- Esta parte es de AJAX Peticiones HTTP - Objeto XMLHTTP Request 2-->
+<!-- Esta parte es de AJAX Peticiones HTTP - Objeto XMLHTTP Request 2, enviar datos GET-->
 
 <section class="seccion">
 <h2 class="title9">*AJAX - Parte 2 Ejercicio: Filtrado de Datos</h2>
@@ -298,6 +298,41 @@
 </section>
 
 </section>
+<!-- /***************************************************************************************/ -->
+
+
+<!-- Esta parte es de AJAX - Objeto XMLHTTP Request 3 -  enviar datos POST -->
+
+
+<section class="seccion">
+
+    <h2 class="title10">*AJAX - Parte 3 - enviar datos POST </h2>
+
+    <section id="seccionPost" class="mainSection">
+        <h3>AJAX III - Envío de Datos (POST)</h3>
+
+        <form id="formRegistro" class="dataForm">
+            <label for="inputTitle">Título de la publicación:</label>
+            <input type="text" name="title" id="inputTitle" placeholder="Ej: Mi posteo">
+
+            <label for="inputBody">Contenido:</label>
+            <textarea name="body" id="inputBody"></textarea>
+
+            <input type="hidden" name="userId" value="1">
+
+            <button type="submit" id="btnSendData" class="btnSubmit">Send Data</button>
+        </form>
+
+        <div id="mensajeServidor" class="responseBox">
+        </div>
+    </section>
+</section>
+<!-- /***************************************************************************************/ -->
+<section class="seccion">
+    <h2 class="title11">*CALLBACKS</h2>
+
+</section>
+
 
 
 
@@ -327,6 +362,8 @@
     <!-- <script src="./js/dom-InsertClonBorrarElementos.js"></script> -->
     <!-- <script src="./js/dom-ObjetosNativosYTimers.js"></script> -->
     <!-- <script src="./js/ajax-Parte1.js"></script> -->
-    <script src="./js/ajax-Parte2.js"></script>
+    <!-- <script src="./js/ajax-Parte2.js"></script> -->
+    <!-- <script src="./js/ajax-Parte3.js"></script> -->
+    <script src="./js/callbacks.js"></script>
 </body>
 </html>

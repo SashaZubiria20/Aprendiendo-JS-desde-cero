@@ -80,6 +80,10 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Control de Eventos de Formulario:** Uso de `preventDefault()` para la gestión de solicitudes asíncronas sin recarga de página.
 * **Gestión de Colisiones:** Importancia de identificadores únicos en implementaciones múltiples para evitar conflictos de ejecución.
 * **Plantillas Dinámicas:** Uso de Template Literals para la creación de estructuras HTML dinámicas de forma legible.
+* **Envío de Datos (Método POST):** Implementación de peticiones para la creación de nuevos recursos en servidores externos.
+* **Captura con FormData:** Uso del objeto `FormData` para empaquetar y enviar datos de formularios de manera automatizada y limpia.
+* **Gestión de Respuestas (Status 201):** Procesamiento de confirmaciones de creación mediante `JSON.parse` y feedback visual en el DOM.
+* **Mantenimiento de Interfaz:** Uso del método `reset()` para la limpieza de formularios tras envíos exitosos.
 
 
 

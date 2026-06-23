@@ -115,7 +115,7 @@ section:last-of-type {
 
 
 
-/* Esta seccion es de AJAX - Objeto XMLHTTP Request 2 - Ejercicio: Filtrado de Datos */
+/* Esta seccion es de AJAX - Objeto XMLHTTP Request 2 - Ejercicio: Filtrado de Datos, enviar datos GET */
 
 .mainSection {
     max-width: 850px;
@@ -170,4 +170,24 @@ section:last-of-type {
 .tableHead {
     background-color: #34495e;
     color: white;
+}
+
+/* Esta seccion es de AJAX - Objeto XMLHTTP Request 3 -  enviar datos POST */
+
+.dataForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.responseBox {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #bdc3c7;
+    background: #fff;
+    color: #27ae60;
+    font-weight: bold;
 }
