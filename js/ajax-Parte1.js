@@ -2,7 +2,10 @@
 AJAX
 */
 
-/****************************************** Objeto XMLHTTP Request 1 **********************************************/
+/* Protocolo HTTP: https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto */
+/* Códigos de estado de respuesta HTTP: https://developer.mozilla.org/es/docs/Web/HTTP/Status */
+
+/****************************************** Objeto XMLHTTP Request parte 1 **********************************************/
 
 /*
 Lo primero es saber como funciona la red, nosotros hacemos una peticion a travez del protocolo HTTP a un dominio, entonces cuando buscamos una direccion lo que hacemos es pedir a un servidor cierta informacion.

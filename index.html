@@ -268,8 +268,34 @@
 <!-- /***************************************************************************************/ -->
 
 <!-- Esta parte es de AJAX Peticiones HTTP - Objeto XMLHTTP Request 2-->
+
 <section class="seccion">
-<h2 class="title9">*AJAX - Parte 2</h2>
+<h2 class="title9">*AJAX - Parte 2 Ejercicio: Filtrado de Datos</h2>
+
+<section id="seccionAjax" class="mainSection">
+    <h3 class="sectionTitle">Gestor de Usuarios API</h3>
+
+    <form id="formFiltros2" class="filterForm">
+        <label for="userSelector2" class="labelFilter">Selecciona ID de Usuario:</label>
+        
+        <select id="userSelector2" class="selectField">
+        </select>
+        
+        <button type="submit" id="btnGetData2" class="btnSubmit">Get Data</button>
+        <button type="button" id="btnLimpiar2" class="btnReset">Limpiar Tabla</button>
+    </form>
+
+    <table id="tablaUsuarios2" class="userTable">
+        <thead class="tableHead">
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Ciudad</th>
+        </thead>
+        <tbody id="cuerpoTabla2" class="tableBody">
+        </tbody>
+    </table>
+</section>
 
 </section>
 

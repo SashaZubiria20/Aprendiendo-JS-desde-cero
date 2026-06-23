@@ -76,6 +76,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 *   **Consumo de APIs:** Conexión y extracción de datos en tiempo real desde servicios externos (JSONPlaceholder).
 *   **Tratamiento de JSON:** Uso de `JSON.parse()` para la transformación de respuestas de texto plano en objetos manipulables por JavaScript.
 *   **Optimización de Renderizado:** Integración de `DocumentFragment` con datos asíncronos para actualizar la interfaz de usuario de forma eficiente y limpia.
+* **Dinamización de Peticiones:** Filtrado de datos mediante parámetros de consulta (Query Params) en la URL.
+* **Control de Eventos de Formulario:** Uso de `preventDefault()` para la gestión de solicitudes asíncronas sin recarga de página.
+* **Gestión de Colisiones:** Importancia de identificadores únicos en implementaciones múltiples para evitar conflictos de ejecución.
+* **Plantillas Dinámicas:** Uso de Template Literals para la creación de estructuras HTML dinámicas de forma legible.
+
+
 
 ## 🛠️ Cómo ver los ejercicios
 
