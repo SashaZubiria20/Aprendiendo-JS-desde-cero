@@ -137,16 +137,16 @@ Para leer el contenido de las promesas tenemos 2 metodos:
     - .then(): Resuelve el contenido de la promesa (lo lee), como la promesa nos devuelve la info encapsulada y no podemos acceder a la info de forma directa, usamos este metodo.
     - .catch(): Resuelve el error
 */
+
+/*
 buscarUsuario(3)
     .then(usuario => buscarEmail(usuario))
     .then(res => console.log(res))
     .catch(err => console.log(err))
+*/
+// Se puede simplificar mas
 
-
-
-
-
-
-/******************************************EJERCICIOS**********************************************/
-
-
+buscarUsuario(2)
+    .then(buscarEmail)
+    .then(console.log)
+    .catch(console.log)

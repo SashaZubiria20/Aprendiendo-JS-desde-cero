@@ -107,17 +107,13 @@ Pasos para hacer peticiones Ajax:
 
 
 
-
-
-
-
 /******************************************EJERCICIOS**********************************************/
 
 /*
 Nivel 1: La Conexión Básica
 Selecciona el botón #btnCargarUsuarios.
 Al hacer clic, crea un objeto new XMLHttpRequest().
-Ábrelo con el método GET a esta URL: https://jsonplaceholder.typicode.com/users.
+Ábrelo con el método GET a esta URL: https://jsonplaceholder.typicode.com/users
 Usa el evento 'load' para mostrar en la consola el texto crudo que responde el servidor (e.target.response).
 No olvides usar el método .send() al final para enviar la petición.
 */

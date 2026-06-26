@@ -93,6 +93,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Consumo con Then y Catch:** Utilización de métodos `.then()` para procesar datos exitosos y `.catch()` para la captura centralizada de errores.
 * **Encadenamiento de Promesas (Chaining):** Técnica de retorno de promesas para ejecutar procesos dependientes en una secuencia lineal y legible.
 
+### 🔟 📡 Fetch API:
+* **Introducción a Fetch:** Sustitución de `XMLHttpRequest` por una interfaz más potente, limpia y basada nativamente en promesas.
+* **Validación de Respuestas:** Implementación de la propiedad `res.ok` para el manejo preciso de códigos de estado HTTP (200-299).
+* **Tratamiento de Datos:** Uso del método `.json()` para la conversión de flujos de datos (streams) en objetos manipulables por JavaScript.
+* **Renderizado Dinámico:** Integración de Fetch con manipulación del DOM para la carga asíncrona de recursos multimedia (imágenes) y datos de usuarios.
+
 
 
 ## 🛠️ Cómo ver los ejercicios
