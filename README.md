@@ -85,6 +85,14 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Gestión de Respuestas (Status 201):** Procesamiento de confirmaciones de creación mediante `JSON.parse` y feedback visual en el DOM.
 * **Mantenimiento de Interfaz:** Uso del método `reset()` para la limpieza de formularios tras envíos exitosos.
 
+### 9️⃣ Programación Asíncrona: Callbacks y Promesas
+* **Concepto de Callbacks:** Implementación de funciones pasadas como argumentos para gestionar la ejecución de tareas diferidas.
+* **Callback Hell:** Identificación y comprensión de las limitaciones de legibilidad al anidar múltiples funciones asíncronas.
+* **Objeto Promise:** Creación de estructuras asíncronas modernas mediante `new Promise()` para la gestión de estados (Pending, Fulfilled, Rejected).
+* **Lógica Resolve y Reject:** Manejo de los "cables" internos de una promesa para determinar el éxito o fallo de una operación.
+* **Consumo con Then y Catch:** Utilización de métodos `.then()` para procesar datos exitosos y `.catch()` para la captura centralizada de errores.
+* **Encadenamiento de Promesas (Chaining):** Técnica de retorno de promesas para ejecutar procesos dependientes en una secuencia lineal y legible.
+
 
 
 ## 🛠️ Cómo ver los ejercicios

@@ -27,16 +27,15 @@ https://developer.mozilla.org/es/docs/web/HTTP/Status
 Las peticiones normalmento se hacen a traves de PHP, para no crear base de datos o de intalar otras cosas, vamos a usar una API JSONPlaceholder
 https://jsonplaceholder.typicode.com
 Se pueden hacer peticiones normales o peticiones AJAX
-Vemos que una API al hacer una peticion esta arrojando un array con un objeto dentro que a su vez tiene mas objetos adentro
+Al hacer una peticion en una API, esta devuelve un array con un objeto dentro que a su vez tiene mas objetos adentro.
 */
 
-const button = document.getElementById('butonAjax')
+const button = document.getElementById('butonAjax');
 
 // Esta funcion sera nuestra peticion AJAX, pero primero necesitamos crear un objeto donde se guarde la respuesta de la peticion (la informacion), por convencion este objeto se suele llamar xhr, porque el objeto tiene un nombre dificil.
-
 button.addEventListener('click', () => {
-    let xhr = new XMLHttpRequest()
-})
+    let xhr = new XMLHttpRequest();
+});
 
 /* Para evitar que esto no funcione en navegadores viejos, y sin depender de JQuery, la forma es preguntar si window tiene XMLHttpRequest, si devuelve true significa que no estamos en una version inferior a internet explorer 11 y podemos usar el objeto XMLHttpRequest(), a partir del 11 esto ya se soporta, si devuelve false, creamos el objeto ActiveXObject('Microsoft.XMLHTTP')
 Esto es solo para asegurarnos de que funcione si estan usando un sistema viejo y de no tener que usar la libreria de JQuery solo para esto porque es muy pesada.
@@ -86,6 +85,30 @@ button.addEventListener('click', () => {
     //Una vez que tenemos esto, lo que tenemos que hacer es enviar esta peticion
     xhr.send()
 });
+
+
+/*
+Pasos para hacer peticiones Ajax:
+
+1- Localizamos el objeto - const button = document.getElementById('butonAjax');
+2- Hacemos la escucha a ese objeto - evento y lanzamos una funcion, que sera la peticion ajax
+3- Construimos adentro del evento el objeto para guardar la info que devuelve la API - let xhr = new XMLHttpRequest();
+4- Luego creamos el metodo open, que lleva 2 parametros - El primero el metodo que usamos para hacer la peticion (GET, POST, PUT, DELET) y el segundo va la direccion de donde vayamos a traer la informacion. - xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
+    - Si se hace por GET los codigo se ponen dentro de la url a la que hacemos la peticion
+    - Si lo hacemos por POST debemos crear un objeto donde vamos a guardar la informacion
+5- Le decimos que hacer con los datos.
+    - Creamos un evento load para saber cuando llego la informacion y la guardamos en una variable. xhr.addEventListener('load', (data) =>{})
+    - Transformamos esa informacion en un objeto - const dataJSON = JSON.parse(data.target.response);
+    - Luego trabajamos con esos datos, los imprimimos en pantalla o lo que haga falta.
+6- Enviamos la informacion - xhr.send()
+
+*/
+
+
+
+
+
+
 
 
 /******************************************EJERCICIOS**********************************************/
