@@ -1,9 +1,11 @@
 /*
     Fetch API
-    Es el reemplazo de XMLHTTPRequest.
+    Es el reemplazo de XMLHTTPRequest´en AJAX.
+    Fetch trabaja por defecto con el metodo GET.
     Proporciona una interfaz JavaScript para acceder y manipular partes del canal HTTP, como peticiones y respuestas.
     También provee un método global fetch() que proporciona una forma fácil y lógica de obtener recursos de forma asíncrona por la red.
-    Está basado en promesas, por lo cual tiene un response y un reject internos
+    Está basado en promesas, por lo cual tiene un response y un reject internos.
+
         Response tiene varios métodos:
         - array​Buffer(): Archivos binarios en bruto (mp3, pdf, jpg, etc). Se utiliza cuando se necesita manipular el contenido del archivo.
         - blob(): Archivos binarios en bruto (mp3, pdf, jpg, etc). Se utiliza cuando no se necesita manipular el contenido y se va a trabajar con el archivo directamente
@@ -17,7 +19,12 @@
             else console.log('FETCH NOT WORKS!')
 */
 
+
+
 /*
+- Este es el ejercicios que teniamos antes con el objeto XMLHttpRequest
+
+
 button.addEventListener('click', () => {
     let xhr
     if (window.XMLHttpRequest) xhr = new XMLHttpRequest()
@@ -39,6 +46,10 @@ button.addEventListener('click', () => {
     xhr.send();
 });
 */
+
+
+
+// Actualizado con Fetch
 
 const button = document.getElementById('buttonFetch');
 

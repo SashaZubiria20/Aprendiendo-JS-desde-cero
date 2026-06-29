@@ -93,11 +93,18 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Consumo con Then y Catch:** Utilización de métodos `.then()` para procesar datos exitosos y `.catch()` para la captura centralizada de errores.
 * **Encadenamiento de Promesas (Chaining):** Técnica de retorno de promesas para ejecutar procesos dependientes en una secuencia lineal y legible.
 
-### 🔟 📡 Fetch API:
+### 🔟 Fetch API:
 * **Introducción a Fetch:** Sustitución de `XMLHttpRequest` por una interfaz más potente, limpia y basada nativamente en promesas.
 * **Validación de Respuestas:** Implementación de la propiedad `res.ok` para el manejo preciso de códigos de estado HTTP (200-299).
 * **Tratamiento de Datos:** Uso del método `.json()` para la conversión de flujos de datos (streams) en objetos manipulables por JavaScript.
 * **Renderizado Dinámico:** Integración de Fetch con manipulación del DOM para la carga asíncrona de recursos multimedia (imágenes) y datos de usuarios.
+
+### 1️⃣1️⃣ Fetch API: Peticiones POST y Envío de Datos
+* **Configuración Avanzada:** Uso del objeto `init` para la definición de métodos HTTP, cabeceras y cuerpo de la solicitud.
+* **Serialización con stringify:** Aplicación de `JSON.stringify()` para convertir objetos JavaScript en flujos de datos compatibles con servidores.
+* **Protocolo de Cabeceras:** Implementación de `headers` y `Content-type` para la gestión precisa del intercambio de información en formato JSON.
+* **Manejo de Estados de Respuesta:** Validación mediante `res.ok` y control de flujo con `Promise.resolve/reject` para la captura de errores 404/500.
+* **Limpieza de Interfaz:** Uso del método `.reset()` para el mantenimiento del estado de los formularios tras envíos exitosos.
 
 
 
