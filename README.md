@@ -106,6 +106,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Manejo de Estados de Respuesta:** Validación mediante `res.ok` y control de flujo con `Promise.resolve/reject` para la captura de errores 404/500.
 * **Limpieza de Interfaz:** Uso del método `.reset()` para el mantenimiento del estado de los formularios tras envíos exitosos.
 
+### 1️⃣2️⃣ Programación Asíncrona: Async / Await
+* **Funciones Asíncronas:** Implementación del operador `async` para la creación de funciones que retornan promesas de forma implícita.
+* **Control de Flujo con Await:** Uso del operador `await` para pausar la ejecución del código hasta la resolución de promesas, permitiendo una lectura secuencial.
+* **Manejo de Errores con Try-Catch:** Estructuración de bloques de "intento" y "captura" para gestionar excepciones en procesos asíncronos de forma limpia.
+* **Excepciones Personalizadas:** Uso de `throw new Error()` para disparar errores lógicos manuales y redirigir el flujo hacia el bloque `catch`.
+* **Encadenamiento Secuencial:** Optimización de peticiones dependientes, eliminando el anidamiento excesivo y mejorando la mantenibilidad del código.
 
 
 ## 🛠️ Cómo ver los ejercicios

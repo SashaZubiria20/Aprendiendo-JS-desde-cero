@@ -55,7 +55,7 @@ botonP.addEventListener('click', () => {
         title: 'Hola soy un post',
         body: 'Este es el contenido del post.',
         userId: 1
-    }
+    };
     fetch('https://jsonplaceholder.typicode.com/posts',{
         method: 'POST',
         body: JSON.stringify(data1),
