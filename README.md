@@ -113,6 +113,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Excepciones Personalizadas:** Uso de `throw new Error()` para disparar errores lógicos manuales y redirigir el flujo hacia el bloque `catch`.
 * **Encadenamiento Secuencial:** Optimización de peticiones dependientes, eliminando el anidamiento excesivo y mejorando la mantenibilidad del código.
 
+### 1️⃣3️⃣ 📦 Librería Axios: GET y POST
+* **Integración Externa:** Implementación de Axios como alternativa optimizada a la Fetch API nativa.
+* **Automatización de Procesos:** Aprovechamiento del parseo automático de JSON (eliminación de `.json()`) y serialización automática de objetos (eliminación de `stringify`).
+* **Acceso a Datos:** Gestión del objeto de respuesta mediante la propiedad `.data` para una manipulación directa de la información.
+* **Configuración Centralizada:** Uso de objetos de inicialización para definir métodos, URLs y cuerpos de solicitud de forma estructurada.
+* **Optimización de Sintaxis:** Aplicación de métodos abreviados `axios.get()` y `axios.post()` para mejorar la legibilidad y mantenimiento del código asíncrono.
+
 
 ## 🛠️ Cómo ver los ejercicios
 

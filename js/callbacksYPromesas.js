@@ -105,7 +105,7 @@ Una promesa es un objeto con dos callbacks internos, es un objeto de JavaScript 
 */
 
 // Para crear una promesa debemos llamar a la clase new promise()
-// La promesa ya trae dos callback por defecto resolve (res) se ejecuta cuando todo sale bien, reject (rej) se ejecuta cuando algo salga mal
+// La promesa ya trae dos callback por defecto resolve (res) se ejecuta cuando todo sale bien, reject (rej) se ejecuta cuando algo sale mal
 
 const usuarios = [{id:1, name:'Susana'},{id:2, name:'Pablo'},{id:3, name:'Maria'}];
 const correos = [{id:1, correo:'Susana@gmail.com'},{id:2, correo:'Pablo@gmail.com'}];

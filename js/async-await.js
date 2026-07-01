@@ -84,7 +84,7 @@ const getUser = (id) => {
 const getUser = async (id) => {
     const user = users.find(user => user.id == id) // buscamos el usuario en el array
         // Ya no tenemos un reject ni un resolve
-        if (!user) throw new Error (`Doesn't exist an user with id ${id}`) // new Error es un constructor que construye un objeto error y se le pasa el mensaje del error. Y el throw es cuando se lanza una excepcion o un error y se controlan a travez de un bloque try
+        if (!user) throw new Error (`Doesn't exist an user with id ${id}`) // new Error es un constructor que crea un objeto error y se le pasa el mensaje del error. Y el throw es cuando se lanza una excepcion o un error y se controlan a travez de un bloque try
         else return user
 }
 
