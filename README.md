@@ -120,6 +120,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Configuración Centralizada:** Uso de objetos de inicialización para definir métodos, URLs y cuerpos de solicitud de forma estructurada.
 * **Optimización de Sintaxis:** Aplicación de métodos abreviados `axios.get()` y `axios.post()` para mejorar la legibilidad y mantenimiento del código asíncrono.
 
+### 1️⃣4️⃣ 📝 Formularios y Validación de Datos
+* **Control de Envío:** Uso de `e.preventDefault()` para anular el comportamiento nativo y gestionar el flujo de datos con JavaScript.
+* **Eventos de Interacción:** Implementación de eventos `'input'` y `'change'` para la captura de datos en tiempo real y respuesta inmediata.
+* **Lógica de Validación:** Creación de objetos de estado para centralizar la validez de múltiples campos y control de estados en botones (`disabled`).
+* **Manipulación de DOM Crítica:** Aplicación de clases dinámicas (`classList.replace`) y retroalimentación visual basada en la validez de la información.
+* **Limpieza de Interfaz:** Uso de `.reset()` y reinicio manual de estados lógicos para garantizar la consistencia tras envíos exitosos.
+
 
 ## 🛠️ Cómo ver los ejercicios
 

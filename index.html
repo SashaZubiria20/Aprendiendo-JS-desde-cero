@@ -448,6 +448,58 @@
 </section>
 <!-- /***************************************************************************************/ -->
 
+<!-- Esta parte es de Formularios, Expresiones regulares y validaciones-->
+<section class="seccion">
+    <h2 class="title17">*Formularios, Expresiones regulares y validaciones</h2>
+
+        <form action="https://www.google.com/search" method="get" class="form4" id="form4">
+            <div class="form__field">
+                <label for="name" class="form__label">Name:</label>
+                <input type="text" id="nameForm4" name="name">
+            </div>
+            <div class="form__field">
+                <label for="email">E-mail:</label>
+                <input type="email" id="emailForm4" name="email">
+            </div>
+            <div id="genderForm4" class="form__field">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="male" id="Male">
+                <label for="male">Female</label>
+                <input type="radio" name="gender" value="female" id="Female">
+            </div>
+            <div class="form__field">
+                <label for="terms">I accept the terms and conditions</label>
+                <input type="checkbox" name="terms" id="termsForm4">
+            </div>
+                <button id="submitForm4" disabled>Send</button>
+        </form>
+
+
+        <section class="seccionExploradores">
+    <h2>*Ejercicios:</h2>
+    <h3>Registro de Nuevos Exploradores</h3>
+
+    <form id="formExplorador" class="formularioContenedor">
+        <div class="campoGrupo">
+            <label>Nombre de Aventurero:</label>
+            <input type="text" id="nombreAventurero" class="inputEstilo">
+        </div>
+        <div class="campoGrupo">
+            <label>Nivel de Valentía (mínimo 5):</label>
+            <input type="number" id="nivelValentia" class="inputEstilo">
+        </div>
+        <div class="campoGrupo">
+            <input type="checkbox" id="checkSeguro">
+            <label>Acepto el seguro contra dragones</label>
+        </div>
+        <button type="submit" id="btnEnviarRegistro" class="btnBloqueado" disabled>Unirse al Club</button>
+    </form>
+    
+    <div id="mensajeResultado" class="oculto"></div>
+</section>
+
+</section>
+<!-- /***************************************************************************************/ -->
 
 
 
@@ -490,6 +542,6 @@
         <script src="./js/libreriaAXIOS-GET-POST.js"></script> -->
                     <!-- ***************** -->
 
-    <!-- <script src=""></script> -->
+    <script src="./js/formularios.js"></script>
 </body>
 </html>
