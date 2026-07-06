@@ -127,6 +127,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Manipulación de DOM Crítica:** Aplicación de clases dinámicas (`classList.replace`) y retroalimentación visual basada en la validez de la información.
 * **Limpieza de Interfaz:** Uso de `.reset()` y reinicio manual de estados lógicos para garantizar la consistencia tras envíos exitosos.
 
+### 1️⃣5️⃣ 🔍 Expresiones Regulares (RegEx)
+* **Patrones de Búsqueda:** Implementación de sintaxis literal `/patron/` y constructor `new RegExp()` para la creación de filtros de texto dinámicos.
+* **Validación de Datos:** Uso del método `.test()` para comprobaciones booleanas en tiempo real y anclajes `^` / `$` para validaciones exactas.
+* **Extracción y Sustitución:** Aplicación de `.match()` para recuperación de datos masivos y `.replace()` con RegEx para limpieza o censura de información sensible.
+* **Cuantificadores y Metacaracteres:** Dominio de rangos `[]`, repeticiones `{n}` y shorthands (`\d`, `\w`, `\s`) para la construcción de reglas complejas.
+* **Banderas de Control:** Uso de `i` (ignore case) y `g` (global) para optimizar el alcance y precisión de las búsquedas en el DOM.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
