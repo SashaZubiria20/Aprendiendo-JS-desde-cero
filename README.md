@@ -134,6 +134,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Cuantificadores y Metacaracteres:** Dominio de rangos `[]`, repeticiones `{n}` y shorthands (`\d`, `\w`, `\s`) para la construcción de reglas complejas.
 * **Banderas de Control:** Uso de `i` (ignore case) y `g` (global) para optimizar el alcance y precisión de las búsquedas en el DOM.
 
+### 1️⃣6️⃣ 💾 Web Storage API (Persistencia de Datos)
+* **Almacenamiento Local vs Sesión:** Implementación de `localStorage` para datos permanentes y `sessionStorage` para datos volátiles de una sola pestaña.
+* **Gestión de Clave-Valor:** Uso de los métodos fundamentales `.setItem()`, `.getItem()`, `.removeItem()` y `.clear()` para el control del almacenamiento.
+* **Serialización de Datos (JSON):** Manejo de objetos complejos mediante `JSON.stringify()` para almacenamiento y `JSON.parse()` para recuperación de estructuras.
+* **Persistencia de Interfaz:** Aplicación de preferencias guardadas (colores, nombres) durante la carga del DOM para mejorar la experiencia de usuario.
+* **Control de Sesión:** Creación de contadores y registros temporales para auditar el comportamiento del usuario durante su navegación actual.
+
 
 ## 🛠️ Cómo ver los ejercicios
 

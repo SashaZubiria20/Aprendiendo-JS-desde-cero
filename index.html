@@ -250,7 +250,7 @@
 
 
     <section id="seccionAjax" class="seccion">
-        <h2>Ejercicios:</h2>
+        <h2 class="ejercicios">Ejercicios:</h2>
     <h3>Consumo de Datos (API)</h3>
     <button id="btnCargarUsuarios">Cargar Lista de Usuarios</button>
     
@@ -349,7 +349,7 @@
 
 
         <section id="seccionFetch" class="mainSection">
-    <h2>Ejercicios:</h2>
+    <h2 class="ejercicios">Ejercicios:</h2>
     <button id="btnFetchDog" class="btnAction">Traer Perro Aleatorio</button>
     
     <div id="dogContainer" class="imageBox">
@@ -411,7 +411,7 @@
 
 
 
-    <h2>Ejercicios:</h2>
+    <h2 class="ejercicios">Ejercicios:</h2>
 <section id="seccionAsync" class="mainSection">
     <h2 class="sectionTitle">Ejercicio: Async / Await</h2>
 
@@ -437,8 +437,6 @@
             <button id="buttonAxiosGet">Get Data</button>
             <ul id="listAxiosGet"></ul>
         </section>
-    
-
 
         <section>
             <button id="buttonAxiosPost">Send Data</button>
@@ -476,7 +474,7 @@
 
 
         <section class="seccionExploradores">
-    <h2>*Ejercicios:</h2>
+    <h2 class="ejercicios">Ejercicios:</h2>
     <h3>Registro de Nuevos Exploradores</h3>
 
     <form id="formExplorador" class="formularioContenedor">
@@ -511,7 +509,7 @@
         </p>
     </div>
 
-    <h2>*Ejercicios:</h2>
+    <h2 class="ejercicios">Ejercicios:</h2>
     <section class="seccionRegEx">
     <h3> Laboratorio de Patrones</h3>
     
@@ -528,9 +526,56 @@
 </section>
 <!-- /***************************************************************************************/ -->
 
-<!-- Esta parte es de APIS-->
+<!-- Esta parte es de APIS - Web Storage-->
 <section class="seccion">
-    <h2 class="title19">*APIS</h2>
+    <h2 class="title19">*APIS - Web Storage</h2>
+
+        <form id="formApi1" class="formApi1">
+            <div class="form_FiledApi1">
+                <label for="key">Key</label>
+                <input type="text" id="key1" name="key">
+            </div>
+
+            <div class="form_FiledApi1">
+                <label for="value">Value</label>
+                <input type="text" id="value1" name="value">
+            </div>
+
+            <input type="submit" value="Save">
+        </form>
+
+    <div id="infoApi1" class="infoApi1">
+        <select name="keys" id="keysApi1">
+            <option value="default">Select key</option>
+        </select>
+        <p id="infoValueApi1"></p>
+    </div>
+
+
+    
+    <h2 class="ejercicios">Ejercicios:</h2>
+
+    <section class="sectionProfileStorage">
+    <h2 class="title20">* Reto: Configuración de Perfil</h2>
+
+    <form id="formUserStorage" class="formProfileContainer">
+        <div class="inputBoxStorage">
+            <label>Nombre de Usuario:</label>
+            <input type="text" id="userNameInput" class="fieldStorage">
+        </div>
+        <div class="inputBoxStorage">
+            <label>Color de Tema (Hex):</label>
+            <input type="color" id="themeColorInput" class="fieldStorage">
+        </div>
+        <button type="submit" id="saveProfileBtn" class="btnStorage">Guardar Preferencias</button>
+    </form>
+
+    <div id="displayProfileArea" class="displayContainerStorage">
+        <p>Bienvenido: <span id="userNameDisplay">Invitado</span></p>
+        <button id="clearDataBtn" class="btnResetStorage">Borrar Todo</button>
+    </div>
+</section>
+
 
 </section>
 <!-- /***************************************************************************************/ -->
@@ -577,7 +622,9 @@
 
     <!-- <script src="./js/formularios.js"></script> -->
     <!-- <script src="validate.js"></script> -->
-    <script src="./js/expresionesRegulares.js"></script>
+    <!-- <script src="./js/expresionesRegulares.js"></script> -->
                     <!-- ***************** -->
+
+    <script src="./js/api-webStorage.js"></script>
 </body>
 </html>
