@@ -149,6 +149,14 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Manipulación del DOM Dinámica:** Traslado físico de elementos entre nodos padres usando métodos de inserción (`append` / `removeChild`) tras el evento de soltado.
 * **Feedback Visual:** Uso de `dragenter` y `dragleave` para la modificación dinámica de estilos en la interfaz durante el proceso de arrastre.
 
+### 1️⃣8️⃣ 📂 API File (Manipulación de Archivos)
+* **Interfaz FileReader:** Uso de objetos de lectura para acceder a datos locales del sistema de archivos del usuario.
+* **Formatos de Lectura:** Implementación de `readAsText()` para documentos y `readAsDataURL()` para previsualización multimedia.
+* **Procesamiento Asíncrono:** Gestión de flujos de datos mediante eventos de carga (`load`) y captura de resultados con `target.result`.
+* **Monitorización de Progreso:** Creación de barras de carga dinámicas utilizando las propiedades `loaded` y `total` del evento `progress`.
+* **Carga Masiva:** Optimización del DOM mediante `DocumentFragment` para la visualización simultánea de múltiples archivos.
+* **Integración con CSS:** Uso de variables personalizadas (`setProperty`) para animar interfaces basadas en el estado de la API.
+
 
 ## 🛠️ Cómo ver los ejercicios
 

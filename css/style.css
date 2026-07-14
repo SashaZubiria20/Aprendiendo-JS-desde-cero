@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* SECCIONES */
 .seccion {
     border-bottom: 1px solid rgb(187, 183, 183);
@@ -423,4 +422,51 @@ section:last-of-type {
 .activeDrop {
     background-color: #fff;
     color: #000;
+}
+
+/*Esta parte es de Apis - File*/
+:root {
+    --bar-width: 0;
+}
+
+.file {
+    margin: 5px;
+}
+
+.imgFile {
+    max-width: 100%;
+}
+
+.load-bar1 {
+    width: 50%;
+    background-color: #ccc;
+    height: 10px;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.load-bar2 {
+    width: 50%;
+    background-color: #ccc;
+    height: 10px;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.load-bar2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: royalblue;
+    width: var(--bar-width);
+    height: 10px;
+}
+
+.progress {
+    display: block;
+    background-color: royalblue;
+    height: 10px;
+    width: 0;
 }
