@@ -363,3 +363,64 @@ section:last-of-type {
 .btnStorage { background-color: #2ecc71; color: white; border: none; padding: 8px; cursor: pointer; }
 .displayContainerStorage { padding: 15px; border: 1px dashed #aaa; background-color: #f9f9f9; }
 .btnResetStorage { background-color: #e74c3c; color: white; border: none; padding: 5px; cursor: pointer; margin-top: 10px; }
+
+
+/*Esta parte es de Apis - DRAG Y DROP*/
+
+.smile {
+    width: 50px;
+}
+
+.drop-zone {
+    height: 100px;
+    border: 2px dotted black;
+    width: 100px;
+    margin-top: 3rem;
+}
+
+
+.containerDrop {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titleDrop {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    background-color: #7e57c2;
+}
+
+.tasksDrop {
+    width: 30%;
+    text-align: center;
+    background: rgb(48, 166, 221);
+    border: 1px solid black;
+    min-height: 130px;
+}
+
+.tasksDrop:first-child {
+    margin-right: 1rem;
+}
+
+.taskDrop {
+    background-color: #7e57c2;
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+    cursor: move;
+}
+
+.taskDrop:first-child {
+    border-top: 1px solid #000;
+}
+
+.taskDrop:last-child {
+    border-bottom: none;
+}
+
+.activeDrop {
+    background-color: #fff;
+    color: #000;
+}

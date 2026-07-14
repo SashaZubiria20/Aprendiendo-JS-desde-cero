@@ -141,6 +141,14 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Persistencia de Interfaz:** Aplicación de preferencias guardadas (colores, nombres) durante la carga del DOM para mejorar la experiencia de usuario.
 * **Control de Sesión:** Creación de contadores y registros temporales para auditar el comportamiento del usuario durante su navegación actual.
 
+### 1️⃣7️⃣ 🖱️ API Drag & Drop (Interactividad Avanzada)
+* **Atributo Draggable:** Activación de elementos móviles mediante la propiedad `draggable="true"` en etiquetas HTML.
+* **Ciclo de Eventos del Objeto:** Manejo de estados de arrastre con `dragstart`, `drag` y `dragend` para el control de la pieza móvil.
+* **Gestión de Zonas de Destino:** Implementación de `dragover` con `preventDefault()` para habilitar áreas de recepción de datos (obligatorio).
+* **Objeto DataTransfer:** Uso de la mochila virtual de información mediante `setData()` y `getData()` para el traspaso de IDs entre contenedores de forma compatible.
+* **Manipulación del DOM Dinámica:** Traslado físico de elementos entre nodos padres usando métodos de inserción (`append` / `removeChild`) tras el evento de soltado.
+* **Feedback Visual:** Uso de `dragenter` y `dragleave` para la modificación dinámica de estilos en la interfaz durante el proceso de arrastre.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
