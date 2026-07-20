@@ -157,6 +157,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Carga Masiva:** Optimización del DOM mediante `DocumentFragment` para la visualización simultánea de múltiples archivos.
 * **Integración con CSS:** Uso de variables personalizadas (`setProperty`) para animar interfaces basadas en el estado de la API.
 
+### 1️⃣9️⃣ 🗄️ API IndexedDB (Bases de Datos Locales)
+* **Arquitectura Orientada a Objetos:** Implementación de bases de datos NoSQL persistentes directamente en el navegador del cliente.
+* **Ciclo de Vida de Conexión:** Manejo de peticiones asíncronas mediante el método `.open()` y control de versiones del esquema.
+* **Gestión de Eventos DOM:** Uso de `onsuccess` para la apertura de flujos y `onerror` para la captura de excepciones en tiempo de ejecución.
+* **Estructura de Almacenamiento:** Uso de `onupgradeneeded` como disparador crítico para la creación de `ObjectStores` mediante el método `createObjectStore()`.
+* **Persistencia Avanzada:** Configuración de entornos de datos capaces de manejar grandes volúmenes de información y estados complejos de la aplicación.
+
 
 ## 🛠️ Cómo ver los ejercicios
 

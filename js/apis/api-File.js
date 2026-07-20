@@ -6,59 +6,64 @@
         https://developer.mozilla.org/es/docs/Web/API/FileReader
 */
 
-const fileInput = document.getElementById('file');
-const imgFile = document.getElementById('imgFile');
-const images = document.getElementById('imagesFile');
+const fileInputText = document.getElementById('fileText');
 const text = document.getElementById('textFile');
 
+const fileInputImgSimple = document.getElementById('fileImg1');
+const imgFileSimple = document.getElementById('imgFileSimple');
+
+const fileInputImgMultiple = document.getElementById('fileImg2');
+const images = document.getElementById('imgFileMultiple');
+
+
 // Para leer archivos de texto
-/*
-fileInput.addEventListener('change', (e) => {
+fileInputText.addEventListener('change', (e) => {
     console.log(e);
     console.log(e.target.files);
     // Creamos unas variables para poder acceder al contenido de ese archivo de texto
     const file = e.target.files[0]
-    //console.log(file) lo que tenemos es la informacion del fichero pero no el contenido
+    //console.log(file) lo que tenemos es la informacion del archivo, pero no el contenido
     // Para eso usamos la interfaz de FileReader
     const fileReader = new FileReader() // con esto ya tenemos acceso a todas las propiedades y metodos de fileReader
-    fileReader.readAsText(file)
-    // Esto es un proceso asincrono, el archivo puede pesar poco o mucho pero va a tardar un tiempo en leerlo, para saber cuando a terminado de cargar y analizar el archivo, le añadimos un evento
+    // Esto es un proceso asincrono, el archivo puede pesar poco o mucho pero va a tardar un tiempo en leerlo, para saber cuando a terminado de cargar y analizar el archivo, le añadimos un evento load
     fileReader.addEventListener('load', (e) => {
         //console.log(e)
-        console.log(e.target.result);
+        //console.log(e.target.result);
         text.textContent = e.target.result
     })
+    fileReader.readAsText(file)
 });
-*/
+
 
 
 // Para leer imagenes
 // Carga simple
-/*
-fileInput.addEventListener('change', (e) => {
+fileInputImgSimple.addEventListener('change', (e) => {
     // Creamos unas variables para poder acceder al contenido de ese archivo de texto
     const file = e.target.files[0]
     // Usamos la interfaz de FileReader
     const fileReader = new FileReader() // con esto ya tenemos acceso a todas las propiedades y metodos de fileReader
-    fileReader.readAsDataURL(file)
     // Esto es un proceso asincrono, el archivo puede pesar poco o mucho pero va a tardar un tiempo en leerlo, para saber cuando a terminado de cargar y analizar el archivo, le añadimos un evento
     fileReader.addEventListener('load', (e) => {
-        imgFile.setAttribute('src', e.target.result)
+        imgFileSimple.setAttribute('src', e.target.result)
     })
+    fileReader.readAsDataURL(file)
 });
-*/
+
 
 //Carga múltiple de imágenes
-fileInput.addEventListener('change', (e) => {
+fileInputImgMultiple.addEventListener('change', (e) => {
     const files = e.target.files
     const fragment = document.createDocumentFragment()
+
     for (const file of files) {
         const fileReader = new FileReader()
         const img = document.createElement('IMG')
-        fileReader.readAsDataURL(file)
         fileReader.addEventListener('load', (e) => {
             img.setAttribute('src', e.target.result)
+            img.classList.add('imgPreview');
         })
+        fileReader.readAsDataURL(file)
         fragment.appendChild(img)
     }
     images.appendChild(fragment)
@@ -71,15 +76,15 @@ fileInput.addEventListener('change', (e) => {
 
 
 // Barra de progreso cuando subimos un archivo
-const fileInput2 = document.getElementById('fileProgress');
+const fileInputProgress = document.getElementById('fileInputProgress');
+const fileInputProgress2 = document.getElementById('fileInputProgress2');
 const progress = document.getElementById('progress');
 
-/*
+
 //detectamos cuando cambio con el evento change
-fileInput2.addEventListener('change', (e) => {
+fileInputProgress.addEventListener('change', (e) => {
     const file = e.target.files[0] // Localizamos el archivo
     const fileReader = new FileReader() // Creamos el objeto
-    fileReader.readAsDataURL(file) // Lo leemos como DataURL y le pasamos ese file
 
     // Para controlar el progreso de subida de un archivo tenemos un evento
     fileReader.addEventListener('progress', (e) => {
@@ -88,25 +93,24 @@ fileInput2.addEventListener('change', (e) => {
         // console.log(e.loaded)
         // console.log(e.total)
         // Este evento no tira hasta el 100% porque es solo mientras esta cargando
-        // Hscemos css en linea porque es un contenido dinamico
+        // Hacemos css en linea porque es un contenido dinamico (hacemos una regla de 3 simple para saber que porcentaje lleva cargado)
         progress.style.width = Number.parseInt(e.loaded * 100 / e.total) + '%'
     })
     // Para saber el 100% necesitamos este evento
     fileReader.addEventListener('loadend', () => {
         progress.style.width = '100%'
     })
+    fileReader.readAsDataURL(file) // Lo leemos como DataURL y le pasamos ese file
 });
-*/
+
 
 
 // Para hacerlo con un solo elemento html
-
 const root = document.documentElement
 
-fileInput2.addEventListener('change', (e) => {
+fileInputProgress2.addEventListener('change', (e) => {
     const file = e.target.files[0]
     const fileReader = new FileReader()
-    fileReader.readAsDataURL(file)
 
     fileReader.addEventListener('progress', (e) => {
         root.style.setProperty('--bar-width', Number.parseInt(e.loaded * 100 / e.total) + '%')
@@ -115,4 +119,5 @@ fileInput2.addEventListener('change', (e) => {
     fileReader.addEventListener('loadend', () => {
         root.style.setProperty('--bar-width', '100%')
     })
-})
+    fileReader.readAsDataURL(file)
+});

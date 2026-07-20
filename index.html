@@ -605,30 +605,92 @@
 
 <!--Esta parte es de APIS - File-->
 <section class="seccion">
-    <h2 class="title21">*APIS - File</h2>
-        <input class="file" type="file" id="file" multiple>
-        <div id="imagesFile"></div>
-        <p id="textFile"></p>
-        <img id="imgFile">
+    <h2 class="title22">*APIS - File</h2>
 
+    <div class="carga">
+        <h3>Carga de Archivo de texto</h3>
+        <input class="file" type="file" id="fileText">
+        <p id="textFile" class="textFile"></p>
+    </div>
+
+    <div class="carga">
+        <h3>Carga de imagen simple</h3>
+        <input class="file" type="file" id="fileImg1">
+        <img id="imgFileSimple" class="previsualizacionIndividual">
+    </div>
+
+    <div class="carga">
+        <h3>Carga de imagenes multiple</h3>
+        <input class="file" type="file" id="fileImg2" multiple>
+        <div id="imgFileMultiple" class="imgFileMultiple"></div>
+    </div>
 
         
-        <input class="file" type="file" id="fileProgress" multiple>
+<!-- Barra de progreso -->
+    <h3>Barra de progreso</h3>
+
     <!-- Loader 2 elements -->
-            <div id="load-bar1" class="load-bar1">
-                <span id="progress" class="progress"></span>
-            </div>
+    <div class="carga">
+        <input class="file" type="file" id="fileInputProgress" multiple>
+        <div id="load-bar1" class="load-bar1">
+            <span id="progress" class="progress"></span>
+        </div>
+    </div>
     <!-- Loader 1 element -->
-            <div id="load-bar2" class="load-bar2"></div>
+    <div class="carga">
+        <input class="file" type="file" id="fileInputProgress2" multiple>
+        <div id="load-bar2" class="load-bar2"></div>
+    </div>
+
+</section>
+<!-- /***************************************************************************************/ -->
+
+<!--Esta parte es de APIS - Drag & Drop + File -->
+<section class="seccion">
+    <h2 class="title23">*APIS - Drag & Drop + File</h2>
+        <form class="form5" method="post" enctype="multipart/form-data">
+            <div>
+                <input class="hide" type="file" name="file" id="file5" multiple />
+
+            <div id="dropZone5" class="dropZone5">
+            <p class="dropZoneText">Drop file or click to upload file</p>
+            </div>
+        <input type="submit" id="uploadButton" class="formButton5" value="Upload">
+    </form>
+
+
+</section>
+<!-- /***************************************************************************************/ -->
+
+<!--Esta parte es de APIS - IndexedDB: Creación-->
+<section class="seccion">
+    <h2 class="title24">*APIS - IndexedDB: Creacion y acceso</h2>
+
+    <form id="formDB1" class="formDB1">
+        <label for="task">Task</label>
+        <input type="text" name="task">
+        <select name="priority">
+            <option value="low">Low</option>
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+        </select>
+        <button class="buttonDB1">Add Task</button>
+    </form>
+    <div id="tasksDB1"></div>
+
+</section>
+<!-- /***************************************************************************************/ -->
+
+<!--Esta parte es de APIS - -->
+<section class="seccion">
+    <h2 class="title25">*APIS - </h2>
+        
 
         
     <h2 class="ejercicios">Ejercicios:</h2>
 
 </section>
 <!-- /***************************************************************************************/ -->
-
-
-
 
 
 <!-- /***************************************SCRIPTS************************************************/ -->
@@ -688,6 +750,8 @@
 <!-- /************************APIS************************/ -->
     <!-- <script src="./js/apis/api-webStorage.js"></script> -->
     <!-- <script src="./js/apis/dragYdrop.js"></script> -->
-    <script src="./js/apis/api-File.js"></script>
+    <!-- <script src="./js/apis/api-File.js"></script> -->
+    <!-- <script src="./js/apis/drag&Drop_File.js"></script> -->
+    <script src="./js/apis/apiIndexedDB.js"></script>
 </body>
 </html>
