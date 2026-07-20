@@ -164,6 +164,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Estructura de Almacenamiento:** Uso de `onupgradeneeded` como disparador crítico para la creación de `ObjectStores` mediante el método `createObjectStore()`.
 * **Persistencia Avanzada:** Configuración de entornos de datos capaces de manejar grandes volúmenes de información y estados complejos de la aplicación.
 
+### 2️⃣0️⃣ 📥 IndexedDB: Inserción y Gestión de Datos
+* **Estrategias de Indexación:** Implementación de `keyPath` para identificadores únicos y `autoIncrement` para la generación automática de llaves.
+* **Ciclo de Transacciones:** Manejo del método `.transaction()` con modos de acceso `'readwrite'` para garantizar la integridad de las operaciones.
+* **Flujo de Trabajo Asíncrono:** Fragmentación del proceso de guardado en tres etapas: apertura de transacción, selección de `objectStore` y ejecución del método `.add()`.
+* **Captura de Formularios:** Integración de eventos de interfaz para transformar entradas del usuario en objetos estructurados compatibles con la base de datos.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
