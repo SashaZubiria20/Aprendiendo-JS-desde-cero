@@ -590,3 +590,9 @@ section:last-of-type {
     color: #ccc;
     cursor: pointer;
 }
+
+.tasksDB1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}

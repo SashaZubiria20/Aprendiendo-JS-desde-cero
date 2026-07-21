@@ -170,6 +170,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Flujo de Trabajo Asíncrono:** Fragmentación del proceso de guardado en tres etapas: apertura de transacción, selección de `objectStore` y ejecución del método `.add()`.
 * **Captura de Formularios:** Integración de eventos de interfaz para transformar entradas del usuario en objetos estructurados compatibles con la base de datos.
 
+### 2️⃣1️⃣ 📖 IndexedDB: Lectura y Recuperación de Datos
+* **Navegación con Cursores:** Implementación del método `.openCursor()` para el recorrido secuencial de registros en la base de datos.
+* **Gestión de Transacciones Seguras:** Uso del modo `'readonly'` para optimizar las consultas y proteger la integridad del almacenamiento.
+* **Lógica de Iteración Asíncrona:** Manejo del flujo de repetición mediante el método `.continue()` para procesar volúmenes masivos de datos.
+* **Optimización del DOM:** Integración de `DocumentFragment` para renderizar colecciones de objetos de forma eficiente y fluida.
+* **Control de Estados Finales:** Implementación de validaciones para detectar el cierre de flujos de datos (cuando el cursor retorna `null`).
+
 
 ## 🛠️ Cómo ver los ejercicios
 
