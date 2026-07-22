@@ -177,6 +177,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Optimización del DOM:** Integración de `DocumentFragment` para renderizar colecciones de objetos de forma eficiente y fluida.
 * **Control de Estados Finales:** Implementación de validaciones para detectar el cierre de flujos de datos (cuando el cursor retorna `null`).
 
+### 2️⃣2️⃣ 🔄 IndexedDB: Actualización y Gestión de Estados
+* **Recuperación Selectiva:** Implementación del método `.get()` para la extracción puntual de registros mediante su `keyPath`.
+* **Persistencia con PUT:** Uso del método inteligente `.put()` para la actualización de objetos existentes y prevención de duplicados.
+* **Control de Interfaz Dinámica:** Uso de `dataset` para alternar comportamientos lógicos en botones y formularios de entrada.
+* **Sincronización de Datos:** Implementación de flujos de retroalimentación donde la interfaz se actualiza automáticamente tras cada operación de escritura.
+* **Manejo de Atributos HTML5:** Vinculación de datos de la base de datos con las propiedades `.value` de los elementos del DOM.
+
 
 ## 🛠️ Cómo ver los ejercicios
 

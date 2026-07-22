@@ -593,6 +593,8 @@ section:last-of-type {
 
 .tasksDB1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    align-items: center;
+    margin-top: 3rem;
 }
