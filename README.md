@@ -197,6 +197,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Optimización de Consumo:** Automatización de pausa y reproducción en elementos multimedia para el ahorro de CPU, batería y datos.
 * **Lógica Condicional Eficiente:** Aplicación de operadores ternarios para la gestión simplificada de estados en la interfaz de usuario.
 
+### 2️⃣5️⃣ 🌐 API Online / Offline (Estado de Red)
+* **Detección de Conectividad:** Implementación de eventos globales `'online'` y `'offline'` para el monitoreo del estado de red en tiempo real.
+* **Propiedades de Navegación:** Uso de `navigator.onLine` para la validación del estado de conexión durante la carga inicial del sitio.
+* **Feedback Crítico:** Creación de sistemas de alertas dinámicas para prevenir la pérdida de datos del usuario ante fallos de internet.
+* **Sincronización de Interfaz:** Uso de `setTimeout` para la gestión de ciclos de vida en animaciones CSS y transiciones de estado visual.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
