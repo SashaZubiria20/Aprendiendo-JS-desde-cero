@@ -191,6 +191,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Arquitectura de Índices:** Configuración de `createIndex` en la fase de actualización (`onupgradeneeded`) para búsquedas por campos secundarios.
 * **Manipulación Dinámica del DOM:** Creación de interfaces reactivas mediante la generación de elementos en tiempo de ejecución y vinculación de datos con `dataset`.
 
+### 2️⃣4️⃣ 👁️ API Visibility Change (Gestión de Recursos)
+* **Control de Atención:** Implementación del evento `'visibilitychange'` para detectar cambios en el foco de la pestaña del navegador.
+* **Estados del Documento:** Uso de la propiedad `document.visibilityState` para diferenciar entre navegación activa (`visible`) y segundo plano (`hidden`).
+* **Optimización de Consumo:** Automatización de pausa y reproducción en elementos multimedia para el ahorro de CPU, batería y datos.
+* **Lógica Condicional Eficiente:** Aplicación de operadores ternarios para la gestión simplificada de estados en la interfaz de usuario.
+
 
 ## 🛠️ Cómo ver los ejercicios
 

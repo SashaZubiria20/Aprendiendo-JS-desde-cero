@@ -574,7 +574,7 @@ section:last-of-type {
     display: none;
 }
 
-/*Esta parte es de Apis - IndexedDB: Creación*/
+/*Esta parte es de Apis - IndexedDB*/
 
 .formDB1 {
     width: 100%;
@@ -597,4 +597,10 @@ section:last-of-type {
     justify-items: center;
     align-items: center;
     margin-top: 3rem;
+}
+
+/*Esta parte es de Apis - Visibility Change*/
+.video {
+    width: 50vw;
+    height: 300px;
 }
