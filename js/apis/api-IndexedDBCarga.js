@@ -38,9 +38,9 @@ if (indexedDB1 && formDB) {
     */
 
     const addData = (data) =>{
-        const transaction = db.transaction(['tasks'], 'readwrite')
-        const objectStore = transaction.objectStore('tasks')
-        const request = objectStore.add(data)
+        const transaction = db.transaction(['tasks'], 'readwrite') // Le decimos a que almacen vamos a acceder y de que tiene que hacer (el modo) si escribir o leer
+        const objectStore = transaction.objectStore('tasks') // Abrimos el almacen
+        const request = objectStore.add(data) // Agregamos los datos
     }
 
 

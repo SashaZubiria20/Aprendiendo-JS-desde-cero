@@ -184,6 +184,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Sincronización de Datos:** Implementación de flujos de retroalimentación donde la interfaz se actualiza automáticamente tras cada operación de escritura.
 * **Manejo de Atributos HTML5:** Vinculación de datos de la base de datos con las propiedades `.value` de los elementos del DOM.
 
+### 2️⃣3️⃣ 🗑️ IndexedDB: Eliminación y Consultas Avanzadas
+* **Operaciones de Borrado:** Implementación del método `.delete()` para la remoción selectiva de registros mediante llaves únicas.
+* **Mantenimiento de Almacenes:** Uso de `.clear()` para el vaciado completo de ObjectStores y `deleteDatabase()` para la gestión profunda del almacenamiento.
+* **Consultas de Alto Rendimiento:** Introducción a `getAll()` y el uso de `IDBKeyRange` para filtrado eficiente de colecciones de datos.
+* **Arquitectura de Índices:** Configuración de `createIndex` en la fase de actualización (`onupgradeneeded`) para búsquedas por campos secundarios.
+* **Manipulación Dinámica del DOM:** Creación de interfaces reactivas mediante la generación de elementos en tiempo de ejecución y vinculación de datos con `dataset`.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
