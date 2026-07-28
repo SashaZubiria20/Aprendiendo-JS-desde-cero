@@ -216,6 +216,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Arquitectura Recurrente:** Integración de peticiones asíncronas (Axios) con la lógica de observación para la creación de feeds infinitos.
 * **Control de Alcance (Scope):** Aplicación de parámetros avanzados en funciones callback para la gestión autónoma del objeto `IntersectionObserver`.
 
+### 2️⃣8️⃣ 📍 API Geolocation (Ubicación Geográfica)
+* **Gestión de Permisos:** Implementación de protocolos de seguridad y privacidad para el acceso a datos de ubicación del usuario.
+* **Captura de Coordenadas:** Uso del método `.getCurrentPosition()` para la obtención de Latitud y Longitud en tiempo real.
+* **Manejo de Errores y Excepciones:** Control de flujos de salida ante denegaciones de permiso o fallos de hardware.
+* **Optimización de Sensores:** Configuración de precisión (`highAccuracy`) y tiempos de espera (`timeout`) mediante el objeto de opciones.
+* **Integración con Servicios Externos:** Preparación de datos geográficos para su uso en mapas y APIs de servicios locales.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
