@@ -662,3 +662,9 @@ section:last-of-type {
     align-items: center;
     justify-content: center;
 } */
+
+.imgLL {
+    max-width: 400px;
+    display: block;
+    margin-bottom: 20px;
+}

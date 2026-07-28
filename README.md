@@ -209,6 +209,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Configuración de Umbrales:** Uso de la propiedad `threshold` para calibrar la activación de eventos basada en el porcentaje de visibilidad del objeto.
 * **Gestión de Entradas (Entries):** Manipulación de objetos de intersección y uso de la propiedad booleana `isIntersecting` para el control lógico.
 
+### 2️⃣7️⃣ 🖼️ Intersection Observer: Scroll Infinito y Lazy Load
+* **Estrategias de Optimización:** Implementación de carga diferida (Lazy Load) para mejorar el rendimiento y ahorro de datos.
+* **Gestión de Ciclos:** Uso del método `.unobserve()` para el control de eventos únicos y prevención de peticiones infinitas.
+* **Navegación Dinámica del DOM:** Uso de la propiedad `lastElementChild` para la identificación de disparadores (triggers) en listas dinámicas.
+* **Arquitectura Recurrente:** Integración de peticiones asíncronas (Axios) con la lógica de observación para la creación de feeds infinitos.
+* **Control de Alcance (Scope):** Aplicación de parámetros avanzados en funciones callback para la gestión autónoma del objeto `IntersectionObserver`.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
