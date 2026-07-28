@@ -203,6 +203,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Feedback Crítico:** Creación de sistemas de alertas dinámicas para prevenir la pérdida de datos del usuario ante fallos de internet.
 * **Sincronización de Interfaz:** Uso de `setTimeout` para la gestión de ciclos de vida en animaciones CSS y transiciones de estado visual.
 
+### 2️⃣6️⃣ 🔭 API Intersection Observer (Detección de Visibilidad)
+* **Monitoreo de Viewport:** Implementación de sensores de visibilidad para detectar la entrada y salida de elementos en el área de visualización.
+* **Optimización de Rendimiento:** Sustitución de eventos de scroll pesados por una arquitectura de observación asíncrona y eficiente.
+* **Configuración de Umbrales:** Uso de la propiedad `threshold` para calibrar la activación de eventos basada en el porcentaje de visibilidad del objeto.
+* **Gestión de Entradas (Entries):** Manipulación de objetos de intersección y uso de la propiedad booleana `isIntersecting` para el control lógico.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
