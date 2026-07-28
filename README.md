@@ -223,6 +223,13 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Optimización de Sensores:** Configuración de precisión (`highAccuracy`) y tiempos de espera (`timeout`) mediante el objeto de opciones.
 * **Integración con Servicios Externos:** Preparación de datos geográficos para su uso en mapas y APIs de servicios locales.
 
+### 2️⃣9️⃣ 📱 API Match Media (Lógica Responsiva)
+* **Sincronización con CSS:** Implementación de `window.matchMedia()` para vincular la lógica de JavaScript con los breakpoints de diseño.
+* **Control de Coincidencias:** Uso de la propiedad `.matches` para la aplicación condicional de estilos y comportamientos basados en el dispositivo.
+* **Adaptabilidad en Tiempo Real:** Gestión del evento `'resize'` para garantizar una experiencia de usuario fluida durante la redimensión de la ventana.
+* **Optimización de Carga:** Uso de `'DOMContentLoaded'` para la inicialización de estados responsivos durante el ciclo de vida de la página.
+* **Manipulación Selectiva:** Aplicación de estilos dinámicos dirigidos a componentes específicos para evitar colisiones globales en el documento.
+
 
 ## 🛠️ Cómo ver los ejercicios
 
