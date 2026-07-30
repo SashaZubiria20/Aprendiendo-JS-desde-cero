@@ -237,6 +237,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Limpieza de Funciones:** Aplicación de destructuración en la recepción de argumentos para simplificar el procesamiento de parámetros.
 * **Optimización de APIs:** Integración de la técnica en respuestas de `Axios` para el acceso directo a los flujos de datos (`data`).
 
+### 3️⃣1️⃣ Debugging y Herramientas de Desarrollo
+* **Inspección de Flujos:** Uso de la pestaña 'Fuentes' (Sources) para la monitorización de la ejecución del script en tiempo real.
+* **Puntos de Interrupción:** Implementación de breakpoints para la detección de errores lógicos y análisis de estados intermedios.
+* **Monitorización de Variables:** Uso de expresiones vigiladas (Watch) para el seguimiento de datos críticos durante la depuración.
+* **Análisis de Ámbito (Scope):** Gestión y verificación de la visibilidad de variables locales y globales en el hilo de ejecución.
+* **Diagnóstico de Tipos:** Resolución de conflictos de tipos (String vs Number) mediante la inspección directa en el motor del navegador.
 
 ## 🛠️ Cómo ver los ejercicios
 
