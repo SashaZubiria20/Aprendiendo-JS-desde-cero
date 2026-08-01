@@ -244,6 +244,12 @@ He dividido mi aprendizaje en bloques lógicos para dominar las bases del lengua
 * **Análisis de Ámbito (Scope):** Gestión y verificación de la visibilidad de variables locales y globales en el hilo de ejecución.
 * **Diagnóstico de Tipos:** Resolución de conflictos de tipos (String vs Number) mediante la inspección directa en el motor del navegador.
 
+### 3️⃣2️⃣ Herramientas y Transpilación (Workflow)
+* **Gestión de Entorno:** Introducción a `Node.js` y `npm` para la administración de dependencias y herramientas de desarrollo.
+* **Transpilación con Babel:** Concepto de traducción de código moderno a versiones compatibles con navegadores antiguos.
+* **Automatización de Tareas:** Comprensión del flujo de trabajo profesional (dev vs public) y optimización de archivos (minificación).
+* **Preparación para Producción:** Bases para el despliegue de aplicaciones utilizando herramientas de empaquetado modernas.
+
 ## 🛠️ Cómo ver los ejercicios
 
 Para visualizar la ejecución del código y los resultados en la consola:
